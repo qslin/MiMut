@@ -5,7 +5,8 @@
 1. [Introduction of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#introduction-of-MiMut)
 2. [The primary principle of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#the-primary-principle-of-mimut)
 3. [The secondary workflow of MiMut using SL9 and LF10 inbred lines](https://github.com/qslin/MiMut/blob/main/README.md#the-secondary-workflow-of-mimut-using-sl9-and-lf10-inbred-lines)
-4. [User guide](https://github.com/qslin/MiMut/blob/main/README.md#user-guide)
+4. [User guide step by step](https://github.com/qslin/MiMut/blob/main/README.md#user-guide-step-by-step)
+
 ## Introduction of MiMut
 
 ## The primary principle of MiMut
@@ -18,5 +19,5 @@
 
 ![Figure_3](https://github.com/qslin/MiMut/blob/main/figures/Figure3.png?raw=true)
 
-## User guide
+## User guide step by step
 
