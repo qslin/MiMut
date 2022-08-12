@@ -1,4 +1,4 @@
-# MiMut: mutant identification in Mimulus lewisii complex
+# MiMut: mutant identification in *Mimulus lewisii* complex
 
 ## The primary principle of MiMut
 
