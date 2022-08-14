@@ -6,7 +6,6 @@
 2. [The primary workflow of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#the-primary-workflow-of-mimut)
 3. [The secondary workflow of MiMut using SL9 and LF10 inbred lines](https://github.com/qslin/MiMut/blob/main/README.md#the-secondary-workflow-of-mimut-eg-using-sl9-and-lf10-inbred-lines)
 4. [User guide step by step](https://github.com/qslin/MiMut/blob/main/README.md#user-guide-step-by-step)
-
 ## Introduction of MiMut
 
 MiMut was designed for easy identification of *Mimulus* mutants. 
