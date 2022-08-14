@@ -123,6 +123,7 @@ dependencies:
   - samtools=1.6=hb116620_7
   - setuptools=61.2.0=py37h06a4308_0
   - snpeff=5.1=hdfd78af_2
+  - snpsift=5.1=hdfd78af_0
   - sqlite=3.39.2=h5082296_0
   - tk=8.6.12=h1ccaba5_0
   - trimmomatic=0.39=hdfd78af_2
