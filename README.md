@@ -67,4 +67,10 @@ Step 1-8 are the same as the primary workflow.
 > In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
 > `sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/MiMut/genomes/SL9g_v2.0.fa -t 16`
 
+### The currently available mutant libraries (by 15th Auguest 2022)
+
+Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs that did not cause any known mutant phenotype for *Mimulus lewisii* and *Mimulus verbenaceus* respectively. To use the libraries, please provide their path such as: `~/MiMut/LF10_lib.txt`.
+
+
+
 
