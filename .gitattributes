@@ -1,1 +1,2 @@
 genomes/SL9g_v2.0.fa filter=lfs diff=lfs merge=lfs -text
+genomes/SL9g_v2.0.fa.gz filter=lfs diff=lfs merge=lfs -text
