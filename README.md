@@ -32,7 +32,7 @@ MiMut was designed for easy identification of *Mimulus* mutants.
 `conda env create -f MiMut/MiMut.yaml`
 4. Activate the environment:
 `conda activate MiMut`
-5. Prepare genome(s) and annotation files (including CDS sequences, protein sequences, and a GTF file). If you don't have them locally, please download from [Mimubase](http://mimubase.org/FTP/Genomes/). The SL9 genome is available in the MiMut package. Creating a new folder for each species is recommended. For example: 
+5. Prepare genome(s) and annotation files (including CDS sequences, protein sequences, and a GTF file). If you don't have them locally, please download from [Mimubase](http://mimubase.org/FTP/Genomes/). Creating a new folder for each species is recommended. For example: 
 ```
 mkdir MvBL
 cd MvBL
@@ -60,6 +60,8 @@ cd ..
 ### For the secondary workflow
 
 Step 1-8 are the same as the primary workflow. 
+
+> Note: the SL9 genome is available in MiMut package. Make sure to decompress it before using MiMut: `gzip -d ../MiMut/genomes/SL9g_v2.0.fa.gz`
 
 9. Execute MiMut (please replace the paths to where your files were stored):
 `sh path/to/MiMut/MiMut.sh -r path/to/reference/genome -g path/to/reference/annotation -c path/to/reference/cds -p path/to/reference/proteins -l path/to/mutant/library -f file/of/raw/read/paths -b path/to/the/second/genome`
