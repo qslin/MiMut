@@ -6,6 +6,7 @@
 2. [The primary workflow of MiMut](https://github.com/qslin/MiMut#the-primary-workflow-of-mimut)
 3. [The secondary workflow of MiMut (e.g. using SL9 and LF10 inbred lines)](https://github.com/qslin/MiMut#the-secondary-workflow-of-mimut-eg-using-sl9-and-lf10-inbred-lines)
 4. [User guide step by step](https://github.com/qslin/MiMut#user-guide-step-by-step)
+5. [Frequently asked questions](https://github.com/qslin/MiMut#frequently-asked-questions)
 
 ## Introduction of MiMut
 
@@ -71,6 +72,13 @@ Step 1-8 are the same as the primary workflow.
 ### The currently available mutant libraries (by 15th Auguest 2022)
 
 Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs that did not cause any known mutant phenotype for *Mimulus lewisii* and *Mimulus verbenaceus* respectively. To use the libraries, please provide their path such as: `~/MiMut/LF10_lib.txt`.
+
+## Frequently asked questions
+
+1. Why there is no SNP in the outputs?
+
+If there no error message, it means no SNP candidate left after filtering. 
+
 
 
 
