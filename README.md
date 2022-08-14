@@ -3,13 +3,13 @@
 ## Table of contents
 
 1. [Introduction of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#introduction-of-MiMut)
-2. [The primary principle of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#the-primary-principle-of-mimut)
+2. [The primary workflow of MiMut](https://github.com/qslin/MiMut/blob/main/README.md#the-primary-workflow-of-mimut)
 3. [The secondary workflow of MiMut using SL9 and LF10 inbred lines](https://github.com/qslin/MiMut/blob/main/README.md#the-secondary-workflow-of-mimut-using-sl9-and-lf10-inbred-lines)
 4. [User guide step by step](https://github.com/qslin/MiMut/blob/main/README.md#user-guide-step-by-step)
 
 ## Introduction of MiMut
 
-## The primary principle of MiMut
+## The primary workflow of MiMut
 
 ![Figure_1](https://github.com/qslin/MiMut/blob/main/figures/Figure1.png?raw=true)
 
@@ -31,7 +31,9 @@
 6. Enter the folder:
 `cd project_name`
 7. Create a file (e.g. reads.txt) to store the absolute paths of raw reads. One pair per line. Forward and reverse seperated by a space. For example:
-`hi`
+```
+/labs/Yuan/DNA/flayed5_2017_BJ/Flayed_H2N3KDMXX_L1_1.clean.fq.gz /labs/Yuan/DNA/flayed5_2017_BJ/Flayed_H2N3KDMXX_L1_2.clean.fq.gz
+```
 8. execute the command below. Replace the paths to where your files were reserved:
 `sh ~/MiMut/MiMut.sh -r path/to/reference/genome -g path/to/reference/annotation -l path/to/mutant/library -f file/of/raw/read/paths`
 For example: 

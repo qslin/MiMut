@@ -120,9 +120,9 @@ cp $gtf $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/
 cp $cds $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/cds.fa/;print $_')
 cp $prot $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/protein.fa/;print $_')
 
-echo "ref.genome : ref" > $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/snpEff.config/;print $_')
+echo "ref.genome : ref" > $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_')
 
-snpEff build -gtf22 -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/snpEff.config/;print $_') -v ref
+snpEff build -gtf22 -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_') -v ref
 
 snpEff ref SNP.vcf > SNP.ann.vcf
 SnpSift filter "ANN[0].IMPACT has 'HIGH'" SNP.ann.vcf > SNP.ann.1.vcf
