@@ -18,8 +18,6 @@ MiMut was designed for easy identification of *Mimulus* mutants.
 
 ![Figure_2](https://github.com/qslin/MiMut/blob/main/figures/Figure2.png?raw=true)
 
-![Figure_3](https://github.com/qslin/MiMut/blob/main/figures/Figure3.png?raw=true)
-
 ## User guide step by step
 
 ### For the primary workflow
