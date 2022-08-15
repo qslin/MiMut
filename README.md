@@ -31,7 +31,8 @@ MiMut was designed for easy identification of *Mimulus* mutants.
 `conda env create -f MiMut/MiMut.yaml`
 4. Activate the environment:
 `conda activate MiMut`
-5. Prepare genome(s) and annotation files (including CDS sequences, protein sequences, and a GTF file). If you don't have them locally, please download from [Mimubase](http://mimubase.org/FTP/Genomes/). Creating a new folder for each species is recommended. For example: 
+5. Prepare genome(s) and annotation files (including CDS sequences, protein sequences, and a GTF file). 
+If you don't have them locally, please download from [Mimubase](http://mimubase.org/FTP/Genomes/). Creating a new folder for each species is recommended. For example: 
 ```
 mkdir MvBL
 cd MvBL
@@ -41,6 +42,28 @@ http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.gtf
 http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.protein.fa
 cd ..
 ```
+6. Set up the mutant library.
+Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. 
+To use the libraries, please provide their path such as `~/MiMut/LF10_lib.txt` if you cloned MiMut to your home directory.
+==If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.== For example: you are going to re-analyze an old sample called bagua. First, check if bagua is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
+```
+mutant_snps/Trumpet1/snp3.vcf
+mutant_snps/boo3/snp3.vcf
+mutant_snps/bagua/snp3.vcf
+mutant_snps/flayed1/snp3.vcf
+mutant_snps/flayed2/snp3.vcf
+mutant_snps/flayed5/snp3.vcf
+mutant_snps/flayed6/snp3.vcf
+mutant_snps/flayed7/snp3.vcf
+mutant_snps/Ml14181/snp3.vcf
+mutant_snps/MlYL/snp3.vcf
+mutant_snps/NT2/snp3.vcf
+mutant_snps/PIN1/snp3.vcf
+mutant_snps/ROI2/snp3.vcf
+mutant_snps/Wastonia/snp3.vcf
+```
+We need to remove bagua on the third line and create a new library: `grep -V 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt` Then use the new library `MiMut/LF10_lib_no_bagua.txt` for running MiMut. 
+
 6. Create a folder for your project:
 `mkdir project_name`
 7. Enter the folder:
@@ -69,9 +92,13 @@ Step 1-8 are the same as the primary workflow.
 > In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
 > `sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/MiMut/genomes/SL9g_v2.0.fa -t 16`
 
-### The currently available mutant libraries (by 15th Auguest 2022)
+### The mutant library setup 
 
-Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs that did not cause any known mutant phenotype for *Mimulus lewisii* and *Mimulus verbenaceus* respectively. To use the libraries, please provide their path such as: `~/MiMut/LF10_lib.txt`.
+Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. To use the libraries, please provide their path such as `~/MiMut/LF10_lib.txt`. 
+
+==If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.== 
+
+For example: 
 
 ## Frequently asked questions
 
