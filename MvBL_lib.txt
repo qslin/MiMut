@@ -1,0 +1,9 @@
+mutant_snps/Mv103/snp3.vcf
+mutant_snps/Mv160/snp3.vcf
+mutant_snps/Mv191/snp3.vcf
+mutant_snps/Mv21/snp3.vcf
+mutant_snps/Mv259/snp3.vcf
+mutant_snps/Mv552_2nd/snp3.vcf
+mutant_snps/Mv552_3rd/snp3.vcf
+mutant_snps/Mv57/snp3.vcf
+mutant_snps/Mv87C/snp3.vcf
