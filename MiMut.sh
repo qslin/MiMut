@@ -15,7 +15,7 @@ usage()
     echo "    -r | --reference	To provide the genome reference. "
     echo "    -g | --gtf	To provide the annotation file in GTF format for annotation of SNPs. "
     echo "    -c | --cds	To provide the CDS sequences in FASTA format for annotation of SNPs. "
-    echo "    -p | --prot	To provide the protein sequences in FASTA format for annotation of SNPs. "
+    echo "    -p | --protein	To provide the protein sequences in FASTA format for annotation of SNPs. "
     echo "    -l | --library	To set the library for mutant SNPs comparing. Please reserve library files in the MiMut folder. A library file should contain SNP files in VCF format with absolute paths. "
     echo "    -f | --files	To provide raw reads. Save all paired reads files with their full paths to one txt file. One pair per line. Forward and reverse seperated by a space. "
     echo "Optional parameters:"
@@ -181,7 +181,7 @@ else
                                         fi
                                         cds=$1
                                         ;;
-                        -p | --prot )            shift
+                        -p | --protein )        shift
                                         if [[ "$1" == "" || "$1" =~ ^- ]]; then
                                                 echo "missing value for -p"
                                                 exit 1
