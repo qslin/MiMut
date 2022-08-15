@@ -1,0 +1,805 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftoolsCommand=mpileup -Ou --threads 8 -Q 20 -q 20 -f /home/CAM/qlin/resource/LF10/LF10g_v2.0.fa reads.sort.filter1.bam
+##reference=file:///home/CAM/qlin/resource/LF10/LF10g_v2.0.fa
+##contig=<ID=LF10_chr1,length=50495432>
+##contig=<ID=LF10_chr2,length=50269664>
+##contig=<ID=LF10_chr3,length=45743229>
+##contig=<ID=LF10_chr4,length=46604272>
+##contig=<ID=LF10_chr5,length=48825035>
+##contig=<ID=LF10_chr6,length=67806300>
+##contig=<ID=LF10_chr7,length=34875448>
+##contig=<ID=LF10_chr8,length=39140677>
+##contig=<ID=LF10_tig00000019_pilon,length=39143>
+##contig=<ID=LF10_tig00000029_pilon,length=52038>
+##contig=<ID=LF10_tig00000053_pilon,length=43419>
+##contig=<ID=LF10_tig00000057_pilon,length=26124>
+##contig=<ID=LF10_tig00000089_pilon,length=25130>
+##contig=<ID=LF10_tig00000097_pilon,length=138867>
+##contig=<ID=LF10_tig00000108_pilon,length=88096>
+##contig=<ID=LF10_tig00000109_pilon,length=96224>
+##contig=<ID=LF10_tig00000112_pilon,length=81127>
+##contig=<ID=LF10_tig00000115_pilon,length=29962>
+##contig=<ID=LF10_tig00000117_pilon,length=34364>
+##contig=<ID=LF10_tig00000121_pilon,length=25064>
+##contig=<ID=LF10_tig00000133_pilon,length=98359>
+##contig=<ID=LF10_tig00000139_pilon,length=50031>
+##contig=<ID=LF10_tig00000141_pilon,length=63955>
+##contig=<ID=LF10_tig00000142_pilon,length=46691>
+##contig=<ID=LF10_tig00000154_pilon,length=31723>
+##contig=<ID=LF10_tig00000171_pilon,length=47683>
+##contig=<ID=LF10_tig00000178_pilon,length=38578>
+##contig=<ID=LF10_tig00000201_pilon,length=40163>
+##contig=<ID=LF10_tig00000226_pilon,length=26470>
+##contig=<ID=LF10_tig00000236_pilon,length=30850>
+##contig=<ID=LF10_tig00000244_pilon,length=44504>
+##contig=<ID=LF10_tig00000250_pilon,length=22841>
+##contig=<ID=LF10_tig00000260_pilon,length=59053>
+##contig=<ID=LF10_tig00000270_pilon,length=56333>
+##contig=<ID=LF10_tig00000278_pilon,length=46873>
+##contig=<ID=LF10_tig00000279_pilon,length=56915>
+##contig=<ID=LF10_tig00000281_pilon,length=36564>
+##contig=<ID=LF10_tig00000300_pilon,length=29750>
+##contig=<ID=LF10_tig00000302_pilon,length=85193>
+##contig=<ID=LF10_tig00000304_pilon,length=30134>
+##contig=<ID=LF10_tig00000319_pilon,length=20145>
+##contig=<ID=LF10_tig00000322_pilon,length=39955>
+##contig=<ID=LF10_tig00000324_pilon,length=108148>
+##contig=<ID=LF10_tig00000332_pilon,length=64658>
+##contig=<ID=LF10_tig00000342_pilon,length=23267>
+##contig=<ID=LF10_tig00000350_pilon,length=42364>
+##contig=<ID=LF10_tig00000352_pilon,length=29973>
+##contig=<ID=LF10_tig00000357_pilon,length=58719>
+##contig=<ID=LF10_tig00000361_pilon,length=34487>
+##contig=<ID=LF10_tig00000385_pilon,length=27755>
+##contig=<ID=LF10_tig00000396_pilon,length=25034>
+##contig=<ID=LF10_tig00000402_pilon,length=52135>
+##contig=<ID=LF10_tig00000424_pilon,length=30408>
+##contig=<ID=LF10_tig00000425_pilon,length=27008>
+##contig=<ID=LF10_tig00000426_pilon,length=43777>
+##contig=<ID=LF10_tig00000427_pilon,length=36877>
+##contig=<ID=LF10_tig00000428_pilon,length=38565>
+##contig=<ID=LF10_tig00000429_pilon,length=74816>
+##contig=<ID=LF10_tig00000430_pilon,length=132952>
+##contig=<ID=LF10_tig00000439_pilon,length=138103>
+##contig=<ID=LF10_tig00000450_pilon,length=19277>
+##contig=<ID=LF10_tig00000459_pilon,length=59979>
+##contig=<ID=LF10_tig00000476_pilon,length=49441>
+##contig=<ID=LF10_tig00000478_pilon,length=60141>
+##contig=<ID=LF10_tig00000482_pilon,length=42510>
+##contig=<ID=LF10_tig00000483_pilon,length=105150>
+##contig=<ID=LF10_tig00000484_pilon,length=28026>
+##contig=<ID=LF10_tig00000490_pilon,length=37092>
+##contig=<ID=LF10_tig00000496_pilon,length=100520>
+##contig=<ID=LF10_tig00000504_pilon,length=38088>
+##contig=<ID=LF10_tig00000515_pilon,length=47575>
+##contig=<ID=LF10_tig00000528_pilon,length=21918>
+##contig=<ID=LF10_tig00000529_pilon,length=51874>
+##contig=<ID=LF10_tig00000531_pilon,length=22955>
+##contig=<ID=LF10_tig00000532_pilon,length=43528>
+##contig=<ID=LF10_tig00000547_pilon,length=38289>
+##contig=<ID=LF10_tig00000552_pilon,length=39922>
+##contig=<ID=LF10_tig00000555_pilon,length=25935>
+##contig=<ID=LF10_tig00000557_pilon,length=191958>
+##contig=<ID=LF10_tig00000560_pilon,length=25762>
+##contig=<ID=LF10_tig00000562_pilon,length=29593>
+##contig=<ID=LF10_tig00000571_pilon,length=51411>
+##contig=<ID=LF10_tig00000572_pilon,length=22273>
+##contig=<ID=LF10_tig00000573_pilon,length=49275>
+##contig=<ID=LF10_tig00000581_pilon,length=72232>
+##contig=<ID=LF10_tig00000588_pilon,length=34038>
+##contig=<ID=LF10_tig00000594_pilon,length=41543>
+##contig=<ID=LF10_tig00000609_pilon,length=121308>
+##contig=<ID=LF10_tig00000612_pilon,length=21041>
+##contig=<ID=LF10_tig00000618_pilon,length=27888>
+##contig=<ID=LF10_tig00000623_pilon,length=78568>
+##contig=<ID=LF10_tig00000625_pilon,length=72454>
+##contig=<ID=LF10_tig00000627_pilon,length=28890>
+##contig=<ID=LF10_tig00000631_pilon,length=24578>
+##contig=<ID=LF10_tig00000641_pilon,length=61188>
+##contig=<ID=LF10_tig00000645_pilon,length=59368>
+##contig=<ID=LF10_tig00000648_pilon,length=30682>
+##contig=<ID=LF10_tig00000655_pilon,length=22240>
+##contig=<ID=LF10_tig00000662_pilon,length=11924>
+##contig=<ID=LF10_tig00000666_pilon,length=58782>
+##contig=<ID=LF10_tig00000669_pilon,length=37984>
+##contig=<ID=LF10_tig00000670_pilon,length=330979>
+##contig=<ID=LF10_tig00000674_pilon,length=131143>
+##contig=<ID=LF10_tig00000689_pilon,length=54293>
+##contig=<ID=LF10_tig00000690_pilon,length=43222>
+##contig=<ID=LF10_tig00000697_pilon,length=26413>
+##contig=<ID=LF10_tig00000702_pilon,length=72231>
+##contig=<ID=LF10_tig00000704_pilon,length=37092>
+##contig=<ID=LF10_tig00000708_pilon,length=43229>
+##contig=<ID=LF10_tig00000711_pilon,length=31348>
+##contig=<ID=LF10_tig00000715_pilon,length=55233>
+##contig=<ID=LF10_tig00000716_pilon,length=41627>
+##contig=<ID=LF10_tig00000718_pilon,length=43735>
+##contig=<ID=LF10_tig00000729_pilon,length=81706>
+##contig=<ID=LF10_tig00000732_pilon,length=74659>
+##contig=<ID=LF10_tig00000735_pilon,length=112263>
+##contig=<ID=LF10_tig00000737_pilon,length=58271>
+##contig=<ID=LF10_tig00000742_pilon,length=52390>
+##contig=<ID=LF10_tig00000744_pilon,length=44069>
+##contig=<ID=LF10_tig00000745_pilon,length=64209>
+##contig=<ID=LF10_tig00000748_pilon,length=39695>
+##contig=<ID=LF10_tig00000755_pilon,length=32722>
+##contig=<ID=LF10_tig00000756_pilon,length=36500>
+##contig=<ID=LF10_tig00000758_pilon,length=47723>
+##contig=<ID=LF10_tig00000759_pilon,length=18860>
+##contig=<ID=LF10_tig00000764_pilon,length=35670>
+##contig=<ID=LF10_tig00000765_pilon,length=45981>
+##contig=<ID=LF10_tig00000768_pilon,length=26666>
+##contig=<ID=LF10_tig00000771_pilon,length=66844>
+##contig=<ID=LF10_tig00000775_pilon,length=28455>
+##contig=<ID=LF10_tig00000779_pilon,length=56787>
+##contig=<ID=LF10_tig00000780_pilon,length=73322>
+##contig=<ID=LF10_tig00000783_pilon,length=23645>
+##contig=<ID=LF10_tig00000784_pilon,length=29177>
+##contig=<ID=LF10_tig00000785_pilon,length=36804>
+##contig=<ID=LF10_tig00000799_pilon,length=69493>
+##contig=<ID=LF10_tig00000806_pilon,length=32745>
+##contig=<ID=LF10_tig00000809_pilon,length=26383>
+##contig=<ID=LF10_tig00000810_pilon,length=36167>
+##contig=<ID=LF10_tig00000812_pilon,length=49659>
+##contig=<ID=LF10_tig00000814_pilon,length=74115>
+##contig=<ID=LF10_tig00000816_pilon,length=31043>
+##contig=<ID=LF10_tig00000820_pilon,length=41874>
+##contig=<ID=LF10_tig00000826_pilon,length=18455>
+##contig=<ID=LF10_tig00000833_pilon,length=31497>
+##contig=<ID=LF10_tig00000834_pilon,length=26357>
+##contig=<ID=LF10_tig00000838_pilon,length=79263>
+##contig=<ID=LF10_tig00000840_pilon,length=30618>
+##contig=<ID=LF10_tig00000845_pilon,length=59790>
+##contig=<ID=LF10_tig00000849_pilon,length=44540>
+##contig=<ID=LF10_tig00000851_pilon,length=29101>
+##contig=<ID=LF10_tig00000852_pilon,length=29415>
+##contig=<ID=LF10_tig00000856_pilon,length=87327>
+##contig=<ID=LF10_tig00000860_pilon,length=184688>
+##contig=<ID=LF10_tig00000867_pilon,length=142360>
+##contig=<ID=LF10_tig00000877_pilon,length=89607>
+##contig=<ID=LF10_tig00000889_pilon,length=70265>
+##contig=<ID=LF10_tig00000890_pilon,length=20523>
+##contig=<ID=LF10_tig00000892_pilon,length=38556>
+##contig=<ID=LF10_tig00000893_pilon,length=31699>
+##contig=<ID=LF10_tig00000898_pilon,length=32250>
+##contig=<ID=LF10_tig00000901_pilon,length=31664>
+##contig=<ID=LF10_tig00000910_pilon,length=59282>
+##contig=<ID=LF10_tig00000918_pilon,length=88012>
+##contig=<ID=LF10_tig00000919_pilon,length=20780>
+##contig=<ID=LF10_tig00000926_pilon,length=46489>
+##contig=<ID=LF10_tig00000932_pilon,length=72316>
+##contig=<ID=LF10_tig00000935_pilon,length=34186>
+##contig=<ID=LF10_tig00000938_pilon,length=75466>
+##contig=<ID=LF10_tig00000940_pilon,length=52184>
+##contig=<ID=LF10_tig00000945_pilon,length=73922>
+##contig=<ID=LF10_tig00000960_pilon,length=43088>
+##contig=<ID=LF10_tig00000963_pilon,length=31717>
+##contig=<ID=LF10_tig00000967_pilon,length=45889>
+##contig=<ID=LF10_tig00000971_pilon,length=50185>
+##contig=<ID=LF10_tig00000977_pilon,length=27637>
+##contig=<ID=LF10_tig00000978_pilon,length=58495>
+##contig=<ID=LF10_tig00000990_pilon,length=44454>
+##contig=<ID=LF10_tig00000992_pilon,length=39620>
+##contig=<ID=LF10_tig00000993_pilon,length=42674>
+##contig=<ID=LF10_tig00000994_pilon,length=37018>
+##contig=<ID=LF10_tig00001000_pilon,length=36650>
+##contig=<ID=LF10_tig00001004_pilon,length=58630>
+##contig=<ID=LF10_tig00001008_pilon,length=15898>
+##contig=<ID=LF10_tig00001010_pilon,length=42601>
+##contig=<ID=LF10_tig00001014_pilon,length=82047>
+##contig=<ID=LF10_tig00001015_pilon,length=65774>
+##contig=<ID=LF10_tig00001027_pilon,length=103444>
+##contig=<ID=LF10_tig00001032_pilon,length=68034>
+##contig=<ID=LF10_tig00001037_pilon,length=30853>
+##contig=<ID=LF10_tig00001039_pilon,length=29890>
+##contig=<ID=LF10_tig00001041_pilon,length=15795>
+##contig=<ID=LF10_tig00001046_pilon,length=34791>
+##contig=<ID=LF10_tig00001053_pilon,length=21105>
+##contig=<ID=LF10_tig00001057_pilon,length=62276>
+##contig=<ID=LF10_tig00001060_pilon,length=37421>
+##contig=<ID=LF10_tig00001075_pilon,length=36926>
+##contig=<ID=LF10_tig00001078_pilon,length=33061>
+##contig=<ID=LF10_tig00001080_pilon,length=46519>
+##contig=<ID=LF10_tig00001096_pilon,length=56316>
+##contig=<ID=LF10_tig00001098_pilon,length=39500>
+##contig=<ID=LF10_tig00001101_pilon,length=72653>
+##contig=<ID=LF10_tig00001123_pilon,length=10311>
+##contig=<ID=LF10_tig00001135_pilon,length=9073>
+##contig=<ID=LF10_tig00001136_pilon,length=32649>
+##contig=<ID=LF10_tig00001146_pilon,length=22779>
+##contig=<ID=LF10_tig00001179_pilon,length=30462>
+##contig=<ID=LF10_tig00001182_pilon,length=50458>
+##contig=<ID=LF10_tig00001183_pilon,length=65384>
+##contig=<ID=LF10_tig00001193_pilon,length=26121>
+##contig=<ID=LF10_tig00001231_pilon,length=3063>
+##contig=<ID=LF10_tig00001253_pilon,length=7203>
+##contig=<ID=LF10_tig00001286_pilon,length=24970>
+##contig=<ID=LF10_tig00002093_pilon,length=1194>
+##contig=<ID=LF10_tig00002284_pilon,length=36014>
+##contig=<ID=LF10_tig00002286_pilon,length=35484>
+##contig=<ID=LF10_tig00002288_pilon,length=17131>
+##contig=<ID=LF10_tig00002289_pilon,length=73845>
+##contig=<ID=LF10_tig00002290_pilon,length=72955>
+##contig=<ID=LF10_tig00002292_pilon,length=29033>
+##contig=<ID=LF10_tig00002294_pilon,length=61004>
+##contig=<ID=LF10_tig00002298_pilon,length=8431>
+##contig=<ID=LF10_tig00002300_pilon,length=32678>
+##contig=<ID=LF10_tig00002302_pilon,length=25888>
+##contig=<ID=LF10_tig00002304_pilon,length=16509>
+##contig=<ID=LF10_tig00002306_pilon,length=55869>
+##contig=<ID=LF10_tig00002307_pilon,length=97095>
+##contig=<ID=LF10_tig00002308_pilon,length=79090>
+##contig=<ID=LF10_tig00002312_pilon,length=42203>
+##contig=<ID=LF10_tig00002314_pilon,length=77288>
+##contig=<ID=LF10_tig00002316_pilon,length=15231>
+##contig=<ID=LF10_tig00002319_pilon,length=108248>
+##contig=<ID=LF10_tig00002320_pilon,length=117059>
+##contig=<ID=LF10_tig00002322_pilon,length=40977>
+##contig=<ID=LF10_tig00002324_pilon,length=30258>
+##contig=<ID=LF10_tig00002326_pilon,length=58106>
+##contig=<ID=LF10_tig00002328_pilon,length=16601>
+##contig=<ID=LF10_tig00002330_pilon,length=25549>
+##contig=<ID=LF10_tig00002332_pilon,length=68543>
+##contig=<ID=LF10_tig00002336_pilon,length=13017>
+##contig=<ID=LF10_tig00002337_pilon,length=10626>
+##contig=<ID=LF10_tig00002344_pilon,length=7351>
+##contig=<ID=LF10_tig00002350_pilon,length=18053>
+##contig=<ID=LF10_tig00002354_pilon,length=17571>
+##contig=<ID=LF10_tig00002358_pilon,length=87797>
+##contig=<ID=LF10_tig00002360_pilon,length=69760>
+##contig=<ID=LF10_tig00002362_pilon,length=36589>
+##contig=<ID=LF10_tig00002364_pilon,length=137116>
+##contig=<ID=LF10_tig00002366_pilon,length=51626>
+##contig=<ID=LF10_tig00002368_pilon,length=54382>
+##contig=<ID=LF10_tig00002370_pilon,length=34382>
+##contig=<ID=LF10_tig00002374_pilon,length=156345>
+##contig=<ID=LF10_tig00002376_pilon,length=12901>
+##contig=<ID=LF10_tig00002378_pilon,length=47231>
+##contig=<ID=LF10_tig00002380_pilon,length=83948>
+##contig=<ID=LF10_tig00002383_pilon,length=121126>
+##contig=<ID=LF10_tig00002386_pilon,length=78758>
+##contig=<ID=LF10_tig00002388_pilon,length=93887>
+##contig=<ID=LF10_tig00002390_pilon,length=17049>
+##contig=<ID=LF10_tig00002392_pilon,length=17948>
+##contig=<ID=LF10_tig00002394_pilon,length=19376>
+##contig=<ID=LF10_tig00002396_pilon,length=24625>
+##contig=<ID=LF10_tig00002398_pilon,length=25190>
+##contig=<ID=LF10_tig00002400_pilon,length=20409>
+##contig=<ID=LF10_tig00002403_pilon,length=38801>
+##contig=<ID=LF10_tig00002405_pilon,length=61226>
+##contig=<ID=LF10_tig00002406_pilon,length=28255>
+##contig=<ID=LF10_tig00002407_pilon,length=51081>
+##contig=<ID=LF10_tig00002412_pilon,length=33385>
+##contig=<ID=LF10_tig00002414_pilon,length=51400>
+##contig=<ID=LF10_tig00002417_pilon,length=64514>
+##contig=<ID=LF10_tig00002418_pilon,length=94166>
+##contig=<ID=LF10_tig00002419_pilon,length=56574>
+##contig=<ID=LF10_tig00002422_pilon,length=9504>
+##contig=<ID=LF10_tig00002423_pilon,length=89300>
+##contig=<ID=LF10_tig00002424_pilon,length=36513>
+##contig=<ID=LF10_tig00002426_pilon,length=33102>
+##contig=<ID=LF10_tig00002428_pilon,length=150805>
+##contig=<ID=LF10_tig00002430_pilon,length=32470>
+##contig=<ID=LF10_tig00002432_pilon,length=46057>
+##contig=<ID=LF10_tig00002434_pilon,length=45553>
+##contig=<ID=LF10_tig00002436_pilon,length=31482>
+##contig=<ID=LF10_tig00002439_pilon,length=144976>
+##contig=<ID=LF10_tig00002442_pilon,length=11732>
+##contig=<ID=LF10_tig00002443_pilon,length=19194>
+##contig=<ID=LF10_tig00002446_pilon,length=32717>
+##contig=<ID=LF10_tig00002448_pilon,length=30989>
+##contig=<ID=LF10_tig00002449_pilon,length=21782>
+##contig=<ID=LF10_tig00002450_pilon,length=31478>
+##contig=<ID=LF10_tig00002452_pilon,length=9871>
+##contig=<ID=LF10_tig00002457_pilon,length=108284>
+##contig=<ID=LF10_tig00002459_pilon,length=22234>
+##contig=<ID=LF10_tig00002461_pilon,length=88179>
+##contig=<ID=LF10_tig00002463_pilon,length=54807>
+##contig=<ID=LF10_tig00002465_pilon,length=69927>
+##contig=<ID=LF10_tig00002467_pilon,length=18518>
+##contig=<ID=LF10_tig00002469_pilon,length=11604>
+##contig=<ID=LF10_tig00002474_pilon,length=37111>
+##contig=<ID=LF10_tig00002475_pilon,length=170192>
+##contig=<ID=LF10_tig00002477_pilon,length=51259>
+##contig=<ID=LF10_tig00002480_pilon,length=10208>
+##contig=<ID=LF10_tig00002482_pilon,length=54599>
+##contig=<ID=LF10_tig00002484_pilon,length=23400>
+##contig=<ID=LF10_tig00002487_pilon,length=26423>
+##contig=<ID=LF10_tig00002490_pilon,length=41357>
+##contig=<ID=LF10_tig00002493_pilon,length=15877>
+##contig=<ID=LF10_tig00002495_pilon,length=31049>
+##contig=<ID=LF10_tig00002499_pilon,length=33472>
+##contig=<ID=LF10_tig00002501_pilon,length=15852>
+##contig=<ID=LF10_tig00002503_pilon,length=28666>
+##contig=<ID=LF10_tig00002508_pilon,length=19330>
+##contig=<ID=LF10_tig00002510_pilon,length=10109>
+##contig=<ID=LF10_tig00002514_pilon,length=26334>
+##contig=<ID=LF10_tig00002516_pilon,length=32754>
+##contig=<ID=LF10_tig00002518_pilon,length=73863>
+##contig=<ID=LF10_tig00002519_pilon,length=25631>
+##contig=<ID=LF10_tig00002521_pilon,length=83001>
+##contig=<ID=LF10_tig00002524_pilon,length=76752>
+##contig=<ID=LF10_tig00002525_pilon,length=107617>
+##contig=<ID=LF10_tig00002526_pilon,length=200485>
+##contig=<ID=LF10_tig00002529_pilon,length=8464>
+##contig=<ID=LF10_tig00002533_pilon,length=10064>
+##contig=<ID=LF10_tig00002534_pilon,length=106238>
+##contig=<ID=LF10_tig00002536_pilon,length=16350>
+##contig=<ID=LF10_tig00002538_pilon,length=47776>
+##contig=<ID=LF10_tig00002540_pilon,length=28712>
+##contig=<ID=LF10_tig00002542_pilon,length=98208>
+##contig=<ID=LF10_tig00002544_pilon,length=124082>
+##contig=<ID=LF10_tig00002546_pilon,length=59023>
+##contig=<ID=LF10_tig00002547_pilon,length=35225>
+##contig=<ID=LF10_tig00002548_pilon,length=55008>
+##contig=<ID=LF10_tig00002549_pilon,length=12221>
+##contig=<ID=LF10_tig00002550_pilon,length=110789>
+##contig=<ID=LF10_tig00002551_pilon,length=21915>
+##contig=<ID=LF10_tig00002552_pilon,length=74450>
+##contig=<ID=LF10_tig00002553_pilon,length=35146>
+##contig=<ID=LF10_tig00002556_pilon,length=11412>
+##contig=<ID=LF10_tig00002557_pilon,length=23404>
+##contig=<ID=LF10_tig00002560_pilon,length=114407>
+##contig=<ID=LF10_tig00002562_pilon,length=20401>
+##contig=<ID=LF10_tig00002567_pilon,length=29274>
+##contig=<ID=LF10_tig00002569_pilon,length=22376>
+##contig=<ID=LF10_tig00002572_pilon,length=30034>
+##contig=<ID=LF10_tig00002573_pilon,length=30515>
+##contig=<ID=LF10_tig00002575_pilon,length=11522>
+##contig=<ID=LF10_tig00002579_pilon,length=37661>
+##contig=<ID=LF10_tig00002582_pilon,length=53393>
+##contig=<ID=LF10_tig00002584_pilon,length=10206>
+##contig=<ID=LF10_tig00002587_pilon,length=57714>
+##contig=<ID=LF10_tig00002588_pilon,length=28861>
+##contig=<ID=LF10_tig00002591_pilon,length=48554>
+##contig=<ID=LF10_tig00002593_pilon,length=45683>
+##contig=<ID=LF10_tig00002596_pilon,length=90350>
+##contig=<ID=LF10_tig00002598_pilon,length=50083>
+##contig=<ID=LF10_tig00002599_pilon,length=38989>
+##contig=<ID=LF10_tig00002600_pilon,length=85490>
+##contig=<ID=LF10_tig00002601_pilon,length=122300>
+##contig=<ID=LF10_tig00002603_pilon,length=102549>
+##contig=<ID=LF10_tig00002605_pilon,length=27319>
+##contig=<ID=LF10_tig00002608_pilon,length=78813>
+##contig=<ID=LF10_tig00002614_pilon,length=17470>
+##contig=<ID=LF10_tig00002618_pilon,length=31585>
+##contig=<ID=LF10_tig00002619_pilon,length=92199>
+##contig=<ID=LF10_tig00002620_pilon,length=66055>
+##contig=<ID=LF10_tig00002621_pilon,length=35102>
+##contig=<ID=LF10_tig00002623_pilon,length=19526>
+##contig=<ID=LF10_tig00002625_pilon,length=109363>
+##contig=<ID=LF10_tig00002627_pilon,length=10564>
+##contig=<ID=LF10_tig00002628_pilon,length=100235>
+##contig=<ID=LF10_tig00002629_pilon,length=43585>
+##contig=<ID=LF10_tig00002630_pilon,length=36217>
+##contig=<ID=LF10_tig00002631_pilon,length=54944>
+##contig=<ID=LF10_tig00002632_pilon,length=25320>
+##contig=<ID=LF10_tig00002633_pilon,length=43788>
+##contig=<ID=LF10_tig00002635_pilon,length=81490>
+##contig=<ID=LF10_tig00002637_pilon,length=42891>
+##contig=<ID=LF10_tig00002638_pilon,length=115458>
+##contig=<ID=LF10_tig00002639_pilon,length=72775>
+##contig=<ID=LF10_tig00002645_pilon,length=124327>
+##contig=<ID=LF10_tig00002650_pilon,length=92489>
+##contig=<ID=LF10_tig00002652_pilon,length=268445>
+##contig=<ID=LF10_tig00002658_pilon,length=105760>
+##contig=<ID=LF10_tig00002659_pilon,length=22539>
+##contig=<ID=LF10_tig00002661_pilon,length=21147>
+##contig=<ID=LF10_tig00002663_pilon,length=32530>
+##contig=<ID=LF10_tig00002666_pilon,length=20561>
+##contig=<ID=LF10_tig00002667_pilon,length=78575>
+##contig=<ID=LF10_tig00002668_pilon,length=52732>
+##contig=<ID=LF10_tig00002673_pilon,length=26767>
+##contig=<ID=LF10_tig00002674_pilon,length=32236>
+##contig=<ID=LF10_tig00002675_pilon,length=67880>
+##contig=<ID=LF10_tig00002677_pilon,length=28203>
+##contig=<ID=LF10_tig00002680_pilon,length=575880>
+##contig=<ID=LF10_tig00002681_pilon,length=300392>
+##contig=<ID=LF10_tig00002682_pilon,length=153309>
+##contig=<ID=LF10_tig00002683_pilon,length=64278>
+##contig=<ID=LF10_tig00002684_pilon,length=65514>
+##contig=<ID=LF10_tig00002688_pilon,length=13017>
+##contig=<ID=LF10_tig00002689_pilon,length=33837>
+##contig=<ID=LF10_tig00002690_pilon,length=18662>
+##contig=<ID=LF10_tig00002694_pilon,length=43128>
+##contig=<ID=LF10_tig00002695_pilon,length=14708>
+##contig=<ID=LF10_tig00002696_pilon,length=95861>
+##contig=<ID=LF10_tig00002697_pilon,length=18779>
+##contig=<ID=LF10_tig00002699_pilon,length=86056>
+##contig=<ID=LF10_tig00002701_pilon,length=21883>
+##contig=<ID=LF10_tig00002703_pilon,length=52266>
+##contig=<ID=LF10_tig00002704_pilon,length=48336>
+##contig=<ID=LF10_tig00002705_pilon,length=15357>
+##contig=<ID=LF10_tig00002706_pilon,length=102784>
+##contig=<ID=LF10_tig00002707_pilon,length=16938>
+##contig=<ID=LF10_tig00002709_pilon,length=5535>
+##contig=<ID=LF10_tig00002710_pilon,length=25072>
+##contig=<ID=LF10_tig00002711_pilon,length=80346>
+##contig=<ID=LF10_tig00002712_pilon,length=75713>
+##contig=<ID=LF10_tig00002714_pilon,length=38544>
+##contig=<ID=LF10_tig00002715_pilon,length=105504>
+##contig=<ID=LF10_tig00002716_pilon,length=71537>
+##contig=<ID=LF10_tig00002717_pilon,length=96198>
+##contig=<ID=LF10_tig00002724_pilon,length=33005>
+##contig=<ID=LF10_tig00002727_pilon,length=23067>
+##contig=<ID=LF10_tig00002729_pilon,length=31560>
+##contig=<ID=LF10_tig00002732_pilon,length=40802>
+##contig=<ID=LF10_tig00002735_pilon,length=31170>
+##contig=<ID=LF10_tig00002736_pilon,length=50443>
+##contig=<ID=LF10_tig00002737_pilon,length=23378>
+##contig=<ID=LF10_tig00002738_pilon,length=38738>
+##contig=<ID=LF10_tig00002740_pilon,length=23850>
+##contig=<ID=LF10_tig00002741_pilon,length=30346>
+##contig=<ID=LF10_tig00002743_pilon,length=20726>
+##contig=<ID=LF10_tig00002745_pilon,length=19184>
+##contig=<ID=LF10_tig00002748_pilon,length=189422>
+##contig=<ID=LF10_tig00002750_pilon,length=15273>
+##contig=<ID=LF10_tig00002752_pilon,length=71662>
+##contig=<ID=LF10_tig00002753_pilon,length=43580>
+##contig=<ID=LF10_tig00002754_pilon,length=78316>
+##contig=<ID=LF10_tig00002756_pilon,length=9939>
+##contig=<ID=LF10_tig00002759_pilon,length=21791>
+##contig=<ID=LF10_tig00002761_pilon,length=81138>
+##contig=<ID=LF10_tig00002763_pilon,length=43787>
+##contig=<ID=LF10_tig00002764_pilon,length=14275>
+##contig=<ID=LF10_tig00002766_pilon,length=134524>
+##contig=<ID=LF10_tig00002768_pilon,length=44515>
+##contig=<ID=LF10_tig00002773_pilon,length=17842>
+##contig=<ID=LF10_tig00002774_pilon,length=14224>
+##contig=<ID=LF10_tig00002776_pilon,length=17540>
+##contig=<ID=LF10_tig00002780_pilon,length=17766>
+##contig=<ID=LF10_tig00002781_pilon,length=29655>
+##contig=<ID=LF10_tig00002782_pilon,length=109518>
+##contig=<ID=LF10_tig00002783_pilon,length=15696>
+##contig=<ID=LF10_tig00002784_pilon,length=238560>
+##contig=<ID=LF10_tig00002787_pilon,length=146954>
+##contig=<ID=LF10_tig00002790_pilon,length=28048>
+##contig=<ID=LF10_tig00002791_pilon,length=19491>
+##contig=<ID=LF10_tig00002792_pilon,length=37821>
+##contig=<ID=LF10_tig00002793_pilon,length=9592>
+##contig=<ID=LF10_tig00002794_pilon,length=76777>
+##contig=<ID=LF10_tig00002796_pilon,length=74082>
+##contig=<ID=LF10_tig00002797_pilon,length=32538>
+##contig=<ID=LF10_tig00002803_pilon,length=130480>
+##contig=<ID=LF10_tig00002805_pilon,length=74352>
+##contig=<ID=LF10_tig00002809_pilon,length=69460>
+##contig=<ID=LF10_tig00002810_pilon,length=19720>
+##contig=<ID=LF10_tig00002811_pilon,length=33231>
+##contig=<ID=LF10_tig00002812_pilon,length=100376>
+##contig=<ID=LF10_tig00002815_pilon,length=108931>
+##contig=<ID=LF10_tig00002816_pilon,length=26432>
+##contig=<ID=LF10_tig00002817_pilon,length=8285>
+##contig=<ID=LF10_tig00002818_pilon,length=22505>
+##contig=<ID=LF10_tig00002819_pilon,length=81650>
+##contig=<ID=LF10_tig00002821_pilon,length=42345>
+##contig=<ID=LF10_tig00002823_pilon,length=52551>
+##contig=<ID=LF10_tig00002824_pilon,length=10551>
+##contig=<ID=LF10_tig00002826_pilon,length=19084>
+##contig=<ID=LF10_tig00002827_pilon,length=14631>
+##contig=<ID=LF10_tig00002828_pilon,length=56361>
+##contig=<ID=LF10_tig00002829_pilon,length=67269>
+##contig=<ID=LF10_tig00002830_pilon,length=59097>
+##contig=<ID=LF10_tig00002831_pilon,length=39443>
+##contig=<ID=LF10_tig00002833_pilon,length=21602>
+##contig=<ID=LF10_tig00002835_pilon,length=91256>
+##contig=<ID=LF10_tig00002836_pilon,length=18581>
+##contig=<ID=LF10_tig00002838_pilon,length=22197>
+##contig=<ID=LF10_tig00002839_pilon,length=136924>
+##contig=<ID=LF10_tig00002841_pilon,length=123526>
+##contig=<ID=LF10_tig00002842_pilon,length=36132>
+##contig=<ID=LF10_tig00002843_pilon,length=21560>
+##contig=<ID=LF10_tig00002844_pilon,length=36110>
+##contig=<ID=LF10_tig00002846_pilon,length=26809>
+##contig=<ID=LF10_tig00002847_pilon,length=37075>
+##contig=<ID=LF10_tig00002848_pilon,length=12186>
+##contig=<ID=LF10_tig00002849_pilon,length=46663>
+##contig=<ID=LF10_tig00002850_pilon,length=71933>
+##contig=<ID=LF10_tig00002851_pilon,length=59632>
+##contig=<ID=LF10_tig00002852_pilon,length=36160>
+##contig=<ID=LF10_tig00002853_pilon,length=34904>
+##contig=<ID=LF10_tig00002854_pilon,length=39965>
+##contig=<ID=LF10_tig00002855_pilon,length=23203>
+##contig=<ID=LF10_tig00002856_pilon,length=89208>
+##contig=<ID=LF10_tig00002857_pilon,length=51424>
+##contig=<ID=LF10_tig00002858_pilon,length=16024>
+##contig=<ID=LF10_tig00002859_pilon,length=62076>
+##contig=<ID=LF10_tig00002860_pilon,length=50658>
+##contig=<ID=LF10_tig00002861_pilon,length=29647>
+##contig=<ID=LF10_tig00002862_pilon,length=56695>
+##contig=<ID=LF10_tig00002863_pilon,length=53558>
+##contig=<ID=LF10_tig00002864_pilon,length=18132>
+##contig=<ID=LF10_tig00002865_pilon,length=91870>
+##contig=<ID=LF10_tig00002866_pilon,length=25266>
+##contig=<ID=LF10_tig00002867_pilon,length=29531>
+##contig=<ID=LF10_tig00002868_pilon,length=48986>
+##contig=<ID=LF10_tig00002869_pilon,length=50855>
+##contig=<ID=LF10_tig00002870_pilon,length=59871>
+##contig=<ID=LF10_tig00002871_pilon,length=30095>
+##contig=<ID=LF10_tig00002872_pilon,length=105430>
+##contig=<ID=LF10_tig00002873_pilon,length=37195>
+##contig=<ID=LF10_tig00002874_pilon,length=53131>
+##contig=<ID=LF10_tig00002875_pilon,length=6536>
+##contig=<ID=LF10_tig00002876_pilon,length=11123>
+##contig=<ID=LF10_tig00002878_pilon,length=12530>
+##contig=<ID=LF10_tig00002879_pilon,length=55773>
+##contig=<ID=LF10_tig00002880_pilon,length=1472>
+##contig=<ID=LF10_tig00002881_pilon,length=156965>
+##contig=<ID=LF10_tig00002882_pilon,length=14382>
+##contig=<ID=LF10_tig00002883_pilon,length=2390>
+##contig=<ID=LF10_tig00002884_pilon,length=9937>
+##contig=<ID=LF10_tig00002885_pilon,length=17953>
+##contig=<ID=LF10_tig00002886_pilon,length=217982>
+##contig=<ID=LF10_tig00002887_pilon,length=21484>
+##contig=<ID=LF10_tig00002888_pilon,length=164903>
+##contig=<ID=LF10_tig00002889_pilon,length=30336>
+##contig=<ID=LF10_tig00002890_pilon,length=29993>
+##contig=<ID=LF10_tig00002891_pilon,length=18422>
+##contig=<ID=LF10_tig00002892_pilon,length=61918>
+##contig=<ID=LF10_tig00002893_pilon,length=48080>
+##contig=<ID=LF10_tig00002894_pilon,length=16000>
+##contig=<ID=LF10_tig00002895_pilon,length=10800>
+##contig=<ID=LF10_tig00002896_pilon,length=187878>
+##contig=<ID=LF10_tig00002897_pilon,length=23358>
+##contig=<ID=LF10_tig00002898_pilon,length=20581>
+##contig=<ID=LF10_tig00002899_pilon,length=2651>
+##contig=<ID=LF10_tig00002900_pilon,length=35776>
+##contig=<ID=LF10_tig00002901_pilon,length=39759>
+##contig=<ID=LF10_tig00002902_pilon,length=18519>
+##contig=<ID=LF10_tig00002903_pilon,length=2485>
+##contig=<ID=LF10_tig00091397_pilon,length=34038>
+##contig=<ID=LF10_tig00091399_pilon,length=31545>
+##contig=<ID=LF10_tig00091400_pilon,length=101196>
+##contig=<ID=LF10_tig00091401_pilon,length=26823>
+##contig=<ID=LF10_tig00091402_pilon,length=21694>
+##contig=<ID=LF10_tig00091403_pilon,length=21617>
+##contig=<ID=LF10_tig00091407_pilon,length=20336>
+##contig=<ID=LF10_tig00091411_pilon,length=24942>
+##contig=<ID=LF10_tig00091415_pilon,length=8695>
+##contig=<ID=LF10_tig00091416_pilon,length=20067>
+##contig=<ID=LF10_tig00091417_pilon,length=16388>
+##contig=<ID=LF10_tig00091418_pilon,length=14879>
+##contig=<ID=LF10_tig00091419_pilon,length=29282>
+##contig=<ID=LF10_tig00091420_pilon,length=38594>
+##contig=<ID=LF10_tig00091421_pilon,length=31916>
+##contig=<ID=LF10_tig00091422_pilon,length=10640>
+##contig=<ID=LF10_tig00091423_pilon,length=22171>
+##contig=<ID=LF10_tig00091425_pilon,length=24873>
+##contig=<ID=LF10_tig00091426_pilon,length=37651>
+##contig=<ID=LF10_tig00091427_pilon,length=29858>
+##contig=<ID=LF10_tig00091428_pilon,length=11417>
+##contig=<ID=LF10_tig00091429_pilon,length=29408>
+##contig=<ID=LF10_tig00091430_pilon,length=24796>
+##contig=<ID=LF10_tig00091431_pilon,length=14570>
+##contig=<ID=LF10_tig00091434_pilon,length=50501>
+##contig=<ID=LF10_tig00091435_pilon,length=16851>
+##contig=<ID=LF10_tig00091437_pilon,length=11361>
+##contig=<ID=LF10_tig00091440_pilon,length=28012>
+##contig=<ID=LF10_tig00091441_pilon,length=35785>
+##contig=<ID=LF10_tig00091442_pilon,length=17241>
+##contig=<ID=LF10_tig00091443_pilon,length=89232>
+##contig=<ID=LF10_MCv1,length=555275>
+##contig=<ID=LF10_cpDNA,length=153689>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -Ou --threads 8 -mv; Date=Wed Dec  9 12:12:53 2020
+##bcftools_filterVersion=1.9+htslib-1.9
+##bcftools_filterCommand=filter -e %QUAL<20; Date=Wed Dec  9 12:15:58 2020
+##bcftools_filterCommand=filter -e (DP4[0]+DP4[1]+DP4[2]+DP4[3])<11||(DP4[0]+DP4[1]+DP4[2]+DP4[3])>72 snp0.vcf; Date=Wed Dec  9 18:38:31 2020
+##bcftools_filterCommand=filter -e (DP4[2]+DP4[3])/(DP4[0]+DP4[1]+DP4[2]+DP4[3])<0.25 snp1.vcf; Date=Wed Dec  9 18:38:31 2020
+##bcftools_normVersion=1.9+htslib-1.9
+##bcftools_normCommand=norm -f /home/CAM/qlin/resource/LF10/LF10g_v2.0.fa -Ov -o snp2.norm.vcf snp2.vcf; Date=Wed Dec  9 18:38:31 2020
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	reads.sort.filter1.bam
+LF10_chr1	1752158	.	C	CA	228	PASS	INDEL;IDV=27;IMF=0.9;DP=30;VDB=0.875698;SGB=-0.693054;MQSB=0.989329;MQ0F=0;AC=2;AN=2;DP4=1,1,16,12;MQ=40	GT:PL	1/1:255,35,0
+LF10_chr1	1995892	.	A	AT	228	PASS	INDEL;IDV=27;IMF=0.75;DP=36;VDB=0.790128;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,2,13,20;MQ=42	GT:PL	1/1:255,59,0
+LF10_chr1	6402634	.	T	TA	228	PASS	INDEL;IDV=29;IMF=0.90625;DP=32;VDB=0.00988412;SGB=-0.693079;MQSB=0.920678;MQ0F=0;AC=2;AN=2;DP4=2,1,20,9;MQ=41	GT:PL	1/1:255,22,0
+LF10_chr1	8005240	.	A	ATG	228	PASS	INDEL;IDV=18;IMF=0.62069;DP=29;VDB=0.893123;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,10,18;MQ=42	GT:PL	1/1:255,55,0
+LF10_chr1	16598708	.	T	A	225	PASS	DP=26;VDB=0.675963;SGB=-0.690438;MQSB=0.91051;MQ0F=0;AC=2;AN=2;DP4=0,0,8,9;MQ=40	GT:PL	1/1:255,51,0
+LF10_chr1	18524396	.	CA	C	225	PASS	INDEL;IDV=23;IMF=1;DP=23;VDB=0.223785;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,6,17;MQ=42	GT:PL	1/1:255,69,0
+LF10_chr1	23161829	.	G	T	225	PASS	DP=29;VDB=0.930535;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,14,7;MQ=42	GT:PL	1/1:255,63,0
+LF10_chr1	23413251	.	C	CT	228	PASS	INDEL;IDV=34;IMF=0.918919;DP=37;VDB=0.724314;SGB=-0.693136;MQSB=0.990119;MQ0F=0;AC=2;AN=2;DP4=1,1,22,13;MQ=41	GT:PL	1/1:255,46,0
+LF10_chr1	24439916	.	A	AT	228	PASS	INDEL;IDV=38;IMF=0.904762;DP=42;VDB=0.932485;SGB=-0.693144;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,3,16,23;MQ=42	GT:PL	1/1:255,40,0
+LF10_chr1	24570695	.	AT	A	228	PASS	INDEL;IDV=31;IMF=0.96875;DP=32;VDB=0.0404858;SGB=-0.69311;MQSB=0.706729;MQ0F=0;AC=2;AN=2;DP4=1,0,20,11;MQ=41	GT:PL	1/1:255,81,0
+LF10_chr1	27622164	.	G	T	225	PASS	DP=21;VDB=0.0147775;SGB=-0.692352;MQSB=0.842105;MQ0F=0;AC=2;AN=2;DP4=0,0,2,19;MQ=40	GT:PL	1/1:255,63,0
+LF10_chr1	27622172	.	G	T	225	PASS	DP=21;VDB=0.036187;SGB=-0.692067;MQSB=0.833333;MQ0F=0;AC=2;AN=2;DP4=0,0,2,18;MQ=40	GT:PL	1/1:255,60,0
+LF10_chr1	29771220	.	A	G	225	PASS	DP=19;VDB=0.0677816;SGB=-0.691153;MQSB=0.924089;MQ0F=0;AC=2;AN=2;DP4=0,0,9,9;MQ=40	GT:PL	1/1:255,54,0
+LF10_chr1	31746208	.	G	C	225	PASS	DP=29;VDB=0.00692722;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,8;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr1	32332921	.	A	AT	225	PASS	INDEL;IDV=13;IMF=1;DP=13;VDB=0.129975;SGB=-0.683931;MQSB=0.748798;MQ0F=0;AC=2;AN=2;DP4=0,0,10,3;MQ=40	GT:PL	1/1:255,39,0
+LF10_chr1	33001036	.	A	ATT	225	PASS	INDEL;IDV=16;IMF=0.761905;DP=21;VDB=0.420909;SGB=-0.692352;MQSB=0.780412;MQ0F=0;AC=2;AN=2;DP4=0,0,10,11;MQ=41	GT:PL	1/1:255,63,0
+LF10_chr1	35443814	.	TA	T	209	PASS	INDEL;IDV=29;IMF=1;DP=29;VDB=0.889512;SGB=-0.693079;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,19,10;MQ=42	GT:PL	1/1:239,87,0
+LF10_chr1	35444121	.	AAT	A	228	PASS	INDEL;IDV=23;IMF=0.793103;DP=29;VDB=0.864254;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,2,8,19;MQ=42	GT:PL	1/1:255,27,0
+LF10_chr1	35621854	.	A	ATAT	228	PASS	INDEL;IDV=14;IMF=0.666667;DP=21;VDB=0.673648;SGB=-0.69168;MQSB=0.572438;MQ0F=0;AC=2;AN=2;DP4=1,1,9,10;MQ=41	GT:PL	1/1:255,21,0
+LF10_chr1	39188217	.	A	AT	228	PASS	INDEL;IDV=25;IMF=0.862069;DP=29;VDB=0.485626;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,13,15;MQ=42	GT:PL	1/1:255,54,0
+LF10_chr1	39234461	.	AC	A	225	PASS	INDEL;IDV=25;IMF=1;DP=25;VDB=0.219267;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,12;MQ=42	GT:PL	1/1:255,75,0
+LF10_chr1	39448116	.	T	A	225	PASS	DP=18;VDB=0.115869;SGB=-0.689466;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,9;MQ=42	GT:PL	1/1:255,48,0
+LF10_chr1	39857202	.	T	TA	223	PASS	INDEL;IDV=22;IMF=0.846154;DP=26;VDB=0.174303;SGB=-0.692976;MQSB=0.971017;MQ0F=0;AC=2;AN=2;DP4=0,0,9,17;MQ=41	GT:PL	1/1:253,78,0
+LF10_chr1	41953579	.	C	CTCA	228	PASS	INDEL;IDV=33;IMF=0.868421;DP=38;VDB=0.63912;SGB=-0.693141;MQSB=0.882901;MQ0F=0;AC=2;AN=2;DP4=1,0,20,17;MQ=41	GT:PL	1/1:255,83,0
+LF10_chr1	42389108	.	T	A	225	PASS	DP=13;VDB=0.422093;SGB=-0.683931;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,4,9;MQ=42	GT:PL	1/1:255,39,0
+LF10_chr1	46705671	.	T	TA	225	PASS	INDEL;IDV=33;IMF=0.970588;DP=34;VDB=0.643305;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,22;MQ=42	GT:PL	1/1:255,102,0
+LF10_chr1	49477050	.	A	AT	225	PASS	INDEL;IDV=14;IMF=0.933333;DP=15;VDB=0.966163;SGB=-0.688148;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,6,9;MQ=42	GT:PL	1/1:255,45,0
+LF10_chr2	2212580	.	T	A	225	PASS	DP=17;VDB=0.933536;SGB=-0.683931;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,3;MQ=42	GT:PL	1/1:255,39,0
+LF10_chr2	4885505	.	A	ATAT	228	PASS	INDEL;IDV=9;IMF=0.3;DP=30;VDB=0.136062;SGB=-0.693054;MQSB=0.907761;MQ0F=0;AC=2;AN=2;DP4=0,2,20,8;MQ=41	GT:PL	1/1:255,27,0
+LF10_chr2	5801662	.	T	G	225	PASS	DP=22;VDB=0.268712;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,11,10;MQ=42	GT:PL	1/1:255,63,0
+LF10_chr2	5928489	.	A	AAT	228	PASS	INDEL;IDV=21;IMF=0.875;DP=24;VDB=0.11231;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,6,17;MQ=42	GT:PL	1/1:255,58,0
+LF10_chr2	12943704	.	T	TA	220	PASS	INDEL;IDV=34;IMF=0.871795;DP=39;VDB=0.211952;SGB=-0.693144;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,25,14;MQ=42	GT:PL	1/1:250,117,0
+LF10_chr2	15030022	.	G	GATA	228	PASS	INDEL;IDV=22;IMF=0.814815;DP=27;VDB=0.58956;SGB=-0.692914;MQSB=0.970994;MQ0F=0;AC=2;AN=2;DP4=1,1,13,12;MQ=41	GT:PL	1/1:255,42,0
+LF10_chr2	20698441	.	T	TA	214	PASS	INDEL;IDV=30;IMF=1;DP=30;VDB=0.993353;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,19,11;MQ=42	GT:PL	1/1:244,90,0
+LF10_chr2	23300292	.	A	AT	225	PASS	INDEL;IDV=27;IMF=1;DP=27;VDB=0.146809;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,14,13;MQ=42	GT:PL	1/1:255,81,0
+LF10_chr2	27856888	.	GA	G	223	PASS	INDEL;IDV=37;IMF=0.948718;DP=39;VDB=0.302802;SGB=-0.693143;MQSB=0.961295;MQ0F=0;AC=2;AN=2;DP4=0,1,19,19;MQ=41	GT:PL	1/1:250,92,0
+LF10_chr2	27945083	.	G	C	225	PASS	DP=27;VDB=0.941924;SGB=-0.692976;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,25,1;MQ=42	GT:PL	1/1:255,78,0
+LF10_chr2	27945226	.	T	A	225	PASS	DP=25;VDB=0.408479;SGB=-0.692831;MQSB=0.740818;MQ0F=0;AC=2;AN=2;DP4=0,0,20,4;MQ=41	GT:PL	1/1:255,72,0
+LF10_chr2	27984218	.	A	ACCC	225	PASS	INDEL;IDV=30;IMF=0.967742;DP=31;VDB=0.30174;SGB=-0.69311;MQSB=0.902014;MQ0F=0;AC=2;AN=2;DP4=0,0,20,11;MQ=41	GT:PL	1/1:255,93,0
+LF10_chr2	35291031	.	T	TA	225	PASS	INDEL;IDV=26;IMF=0.962963;DP=27;VDB=0.209512;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,14;MQ=42	GT:PL	1/1:255,81,0
+LF10_chr2	39579598	.	G	T	225	PASS	DP=35;VDB=0.247015;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,1,32;MQ=41	GT:PL	1/1:255,99,0
+LF10_chr2	40315528	.	TG	T	225	PASS	INDEL;IDV=20;IMF=1;DP=20;VDB=0.907481;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,11;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr2	41659391	.	A	AAAT	228	PASS	INDEL;IDV=20;IMF=0.740741;DP=27;VDB=0.919892;SGB=-0.692976;MQSB=0.73221;MQ0F=0;AC=2;AN=2;DP4=1,0,15,11;MQ=41	GT:PL	1/1:255,55,0
+LF10_chr2	42008363	.	T	TTA	225	PASS	INDEL;IDV=17;IMF=0.772727;DP=22;VDB=0.871266;SGB=-0.692562;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,7;MQ=42	GT:PL	1/1:255,66,0
+LF10_chr2	44759723	.	A	G	228	PASS	DP=34;VDB=0.666961;SGB=-0.692352;RPB=1;MQB=1;MQSB=1;BQB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,10,11;MQ=42	GT:PL	1/1:255,25,0
+LF10_chr2	44759725	.	G	A	228	PASS	DP=32;VDB=0.679178;SGB=-0.692352;RPB=1;MQB=1;MQSB=1;BQB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,10,11;MQ=42	GT:PL	1/1:255,29,0
+LF10_chr2	45273052	.	T	TTTTA	228	PASS	INDEL;IDV=1;IMF=0.04;DP=25;VDB=0.983929;SGB=-0.692717;MQSB=0.746718;MQ0F=0;AC=2;AN=2;DP4=2,0,14,9;MQ=40	GT:PL	1/1:255,40,0
+LF10_chr2	46096338	.	A	AT	225	PASS	INDEL;IDV=40;IMF=0.97561;DP=41;VDB=0.0753663;SGB=-0.693145;MQSB=0.999915;MQ0F=0;AC=2;AN=2;DP4=0,0,20,21;MQ=41	GT:PL	1/1:255,123,0
+LF10_chr2	46554032	.	C	T	225	PASS	DP=20;VDB=0.888836;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,3,11;MQ=42	GT:PL	1/1:255,42,0
+LF10_chr2	46642775	.	A	AT	228	PASS	INDEL;IDV=21;IMF=1;DP=21;VDB=0.791088;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,14,6;MQ=42	GT:PL	1/1:255,50,0
+LF10_chr3	455604	.	A	AT	223	PASS	INDEL;IDV=12;IMF=1;DP=12;VDB=0.391706;SGB=-0.680642;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,4,8;MQ=42	GT:PL	1/1:253,36,0
+LF10_chr3	3696738	.	T	G	225	PASS	DP=36;VDB=0.236056;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,11,19;MQ=42	GT:PL	1/1:255,90,0
+LF10_chr3	3697719	.	TG	T	202	PASS	INDEL;IDV=29;IMF=0.878788;DP=33;VDB=0.170068;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,2,17,14;MQ=42	GT:PL	1/1:229,51,0
+LF10_chr3	5633499	.	A	AT	228	PASS	INDEL;IDV=7;IMF=0.466667;DP=15;VDB=0.939728;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,7,7;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr3	8897521	.	A	AT	225	PASS	INDEL;IDV=13;IMF=0.722222;DP=18;VDB=0.986139;SGB=-0.691153;MQSB=0.974693;MQ0F=0;AC=2;AN=2;DP4=0,0,7,11;MQ=40	GT:PL	1/1:255,54,0
+LF10_chr3	8951419	.	TC	T	211	PASS	INDEL;IDV=21;IMF=0.913043;DP=23;VDB=0.877802;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,10;MQ=42	GT:PL	1/1:241,69,0
+LF10_chr3	9389207	.	C	A	225	PASS	DP=14;VDB=0.0103908;SGB=-0.683931;MQSB=0.899815;MQ0F=0;AC=2;AN=2;DP4=0,0,7,6;MQ=40	GT:PL	1/1:255,39,0
+LF10_chr3	9866985	.	A	AT	205	PASS	INDEL;IDV=39;IMF=0.906977;DP=43;VDB=0.892217;SGB=-0.693145;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=2,1,18,22;MQ=42	GT:PL	1/1:232,56,0
+LF10_chr3	10864179	.	T	TTA	228	PASS	INDEL;IDV=22;IMF=0.846154;DP=26;VDB=0.667639;SGB=-0.692914;MQSB=0.983471;MQ0F=0;AC=2;AN=2;DP4=1,0,5,20;MQ=41	GT:PL	1/1:255,39,0
+LF10_chr3	11091664	.	A	AT	225	PASS	INDEL;IDV=24;IMF=1;DP=24;VDB=0.324419;SGB=-0.692831;MQSB=0.84246;MQ0F=0;AC=2;AN=2;DP4=0,0,14,10;MQ=41	GT:PL	1/1:255,72,0
+LF10_chr3	11475287	.	G	A	225	PASS	DP=14;VDB=0.317696;SGB=-0.676189;MQSB=0.964642;MQ0F=0;AC=2;AN=2;DP4=0,0,7,4;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr3	11838467	.	C	CT	228	PASS	INDEL;IDV=26;IMF=0.787879;DP=33;VDB=0.177955;SGB=-0.69312;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,22,10;MQ=42	GT:PL	1/1:255,59,0
+LF10_chr3	11949802	.	A	AT	228	PASS	INDEL;IDV=25;IMF=0.892857;DP=28;VDB=0.372838;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,12,15;MQ=42	GT:PL	1/1:255,44,0
+LF10_chr3	12340901	.	G	T	225	PASS	DP=14;VDB=0.0602664;SGB=-0.676189;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,2,9;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr3	12377671	.	A	AT	228	PASS	INDEL;IDV=31;IMF=0.939394;DP=33;VDB=0.861891;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,26,5;MQ=42	GT:PL	1/1:255,25,0
+LF10_chr3	12567180	.	AT	A	227	PASS	INDEL;IDV=32;IMF=0.969697;DP=33;VDB=0.397843;SGB=-0.69312;MQSB=0.594447;MQ0F=0;AC=2;AN=2;DP4=1,0,13,19;MQ=40	GT:PL	1/1:254,74,0
+LF10_chr3	12599211	.	G	GTTTTT	225	PASS	INDEL;IDV=24;IMF=0.888889;DP=27;VDB=0.321473;SGB=-0.693021;MQSB=0.895309;MQ0F=0;AC=2;AN=2;DP4=0,0,20,7;MQ=41	GT:PL	1/1:255,81,0
+LF10_chr3	13559905	.	A	AT	225	PASS	INDEL;IDV=32;IMF=0.941176;DP=34;VDB=0.498899;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,23,11;MQ=42	GT:PL	1/1:255,96,0
+LF10_chr3	18895713	.	G	GA	228	PASS	INDEL;IDV=35;IMF=0.972222;DP=36;VDB=0.629879;SGB=-0.693136;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,13,22;MQ=42	GT:PL	1/1:255,68,0
+LF10_chr3	25893653	.	A	AT	228	PASS	INDEL;IDV=35;IMF=0.875;DP=40;VDB=0.154552;SGB=-0.693143;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,23,15;MQ=42	GT:PL	1/1:255,91,0
+LF10_chr3	29566611	.	TC	T	225	PASS	INDEL;IDV=24;IMF=1;DP=24;VDB=0.204564;SGB=-0.692831;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,12;MQ=42	GT:PL	1/1:255,72,0
+LF10_chr3	32116697	.	T	TA	217	PASS	INDEL;IDV=42;IMF=0.954545;DP=44;VDB=0.447815;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,9,33;MQ=42	GT:PL	1/1:244,82,0
+LF10_chr3	33624018	.	A	AT	225	PASS	INDEL;IDV=24;IMF=0.96;DP=25;VDB=0.943445;SGB=-0.692914;MQSB=0.955682;MQ0F=0;AC=2;AN=2;DP4=0,0,14,11;MQ=41	GT:PL	1/1:255,72,0
+LF10_chr3	35597563	.	T	TA	225	PASS	INDEL;IDV=23;IMF=0.958333;DP=24;VDB=0.338096;SGB=-0.692831;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,14,10;MQ=42	GT:PL	1/1:255,72,0
+LF10_chr3	36504799	.	T	TTC	219	PASS	INDEL;IDV=22;IMF=0.956522;DP=23;VDB=0.595392;SGB=-0.692717;MQSB=0.625784;MQ0F=0;AC=2;AN=2;DP4=0,0,8,15;MQ=41	GT:PL	1/1:249,69,0
+LF10_chr3	36646764	.	T	TA	225	PASS	INDEL;IDV=28;IMF=1;DP=28;VDB=0.0245004;SGB=-0.693054;MQSB=0.96195;MQ0F=0;AC=2;AN=2;DP4=0,0,12,16;MQ=41	GT:PL	1/1:255,84,0
+LF10_chr3	38183127	.	A	AT	225	PASS	INDEL;IDV=23;IMF=1;DP=23;VDB=0.412233;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,10;MQ=42	GT:PL	1/1:255,69,0
+LF10_chr3	38826640	.	A	AAT	228	PASS	INDEL;IDV=27;IMF=0.794118;DP=34;VDB=0.548706;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,20,13;MQ=42	GT:PL	1/1:255,69,0
+LF10_chr4	1379431	.	C	T	225	PASS	DP=30;VDB=0.0157613;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,18;MQ=42	GT:PL	1/1:255,84,0
+LF10_chr4	3812107	.	C	CT	228	PASS	INDEL;IDV=16;IMF=0.8;DP=20;VDB=0.619188;SGB=-0.691153;MQSB=0.916401;MQ0F=0;AC=2;AN=2;DP4=2,0,7,11;MQ=41	GT:PL	1/1:255,34,0
+LF10_chr4	5861832	.	A	T	225	PASS	DP=23;VDB=0.211774;SGB=-0.692562;MQSB=0.910098;MQ0F=0;AC=2;AN=2;DP4=0,0,9,13;MQ=41	GT:PL	1/1:255,66,0
+LF10_chr4	8317138	.	C	CTTA	210	PASS	INDEL;IDV=2;IMF=0.166667;DP=12;VDB=0.798635;SGB=-0.680642;MQSB=0.8;MQ0F=0;AC=2;AN=2;DP4=0,0,10,2;MQ=41	GT:PL	1/1:240,36,0
+LF10_chr4	8317139	.	TATA	T	210	PASS	INDEL;IDV=10;IMF=0.833333;DP=12;VDB=0.753381;SGB=-0.680642;MQSB=0.8;MQ0F=0;AC=2;AN=2;DP4=0,0,10,2;MQ=41	GT:PL	1/1:240,36,0
+LF10_chr4	10603666	.	A	T	228	PASS	DP=37;VDB=0.191846;SGB=-0.692717;RPB=1;MQB=1;MQSB=0.931547;BQB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,12,11;MQ=41	GT:PL	1/1:255,42,0
+LF10_chr4	10603667	.	T	A	228	PASS	DP=37;VDB=0.196078;SGB=-0.692717;RPB=1;MQB=1;MQSB=0.931547;BQB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,12,11;MQ=41	GT:PL	1/1:255,41,0
+LF10_chr4	20319807	.	A	AATT	228	PASS	INDEL;IDV=39;IMF=0.928571;DP=42;VDB=0.665804;SGB=-0.693145;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=2,0,18,22;MQ=42	GT:PL	1/1:255,91,0
+LF10_chr4	24328226	.	T	TAA	225	PASS	INDEL;IDV=6;IMF=0.428571;DP=14;VDB=0.67567;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,5;MQ=42	GT:PL	1/1:255,42,0
+LF10_chr4	39006861	.	A	AT	225	PASS	INDEL;IDV=13;IMF=0.928571;DP=14;VDB=0.594955;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,11,3;MQ=42	GT:PL	1/1:255,42,0
+LF10_chr4	41766106	.	T	A	225	PASS	DP=18;VDB=0.0681612;SGB=-0.686358;MQSB=0.527292;MQ0F=0;AC=2;AN=2;DP4=0,0,10,4;MQ=41	GT:PL	1/1:255,42,0
+LF10_chr4	44031010	.	A	AT	225	PASS	INDEL;IDV=13;IMF=0.928571;DP=14;VDB=0.373921;SGB=-0.686358;MQSB=0.885987;MQ0F=0;AC=2;AN=2;DP4=0,0,7,7;MQ=41	GT:PL	1/1:255,42,0
+LF10_chr5	1046108	.	C	CAA	225	PASS	INDEL;IDV=39;IMF=0.928571;DP=42;VDB=0.014357;SGB=-0.693146;MQSB=0.958651;MQ0F=0;AC=2;AN=2;DP4=0,0,19,23;MQ=41	GT:PL	1/1:255,126,0
+LF10_chr5	1046508	.	GC	G	225	PASS	INDEL;IDV=28;IMF=0.965517;DP=29;VDB=0.13499;SGB=-0.693079;MQSB=0.987041;MQ0F=0;AC=2;AN=2;DP4=0,0,6,23;MQ=41	GT:PL	1/1:255,87,0
+LF10_chr5	1046769	.	C	CT	225	PASS	INDEL;IDV=27;IMF=1;DP=27;VDB=0.00306055;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,16,11;MQ=42	GT:PL	1/1:255,81,0
+LF10_chr5	5428857	.	G	C	225	PASS	DP=22;VDB=0.109837;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,5;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr5	7155697	.	G	A	225	PASS	DP=28;VDB=0.0330772;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,14;MQ=42	GT:PL	1/1:255,69,0
+LF10_chr5	10630845	.	T	C	225	PASS	DP=35;VDB=0.000817749;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,21,12;MQ=42	GT:PL	1/1:255,99,0
+LF10_chr5	13567401	.	G	T	225	PASS	DP=21;VDB=0.264735;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,10;MQ=42	GT:PL	1/1:255,57,0
+LF10_chr5	19818504	.	C	CAT	225	PASS	INDEL;IDV=30;IMF=0.857143;DP=35;VDB=0.0903569;SGB=-0.693136;MQSB=0.951725;MQ0F=0;AC=2;AN=2;DP4=0,0,19,16;MQ=41	GT:PL	1/1:255,105,0
+LF10_chr5	20907777	.	G	GAAAA	225	PASS	INDEL;IDV=41;IMF=0.911111;DP=45;VDB=0.914179;SGB=-0.693147;MQSB=0.995835;MQ0F=0;AC=2;AN=2;DP4=0,0,20,25;MQ=41	GT:PL	1/1:255,135,0
+LF10_chr5	29516537	.	A	AT	228	PASS	INDEL;IDV=31;IMF=0.885714;DP=35;VDB=0.470106;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,17,17;MQ=42	GT:PL	1/1:255,70,0
+LF10_chr5	29916178	.	T	TA	225	PASS	INDEL;IDV=19;IMF=1;DP=19;VDB=0.0837158;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,3,16;MQ=42	GT:PL	1/1:255,57,0
+LF10_chr5	35361826	.	A	T	225	PASS	DP=21;VDB=0.510039;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,14;MQ=42	GT:PL	1/1:255,63,0
+LF10_chr5	46244415	.	A	AT	228	PASS	INDEL;IDV=25;IMF=0.862069;DP=29;VDB=0.313043;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,12,16;MQ=42	GT:PL	1/1:255,73,0
+LF10_chr6	753047	.	C	CA	228	PASS	INDEL;IDV=19;IMF=0.826087;DP=23;VDB=0.141443;SGB=-0.692562;MQSB=0.625784;MQ0F=0;AC=2;AN=2;DP4=1,0,7,15;MQ=41	GT:PL	1/1:255,33,0
+LF10_chr6	4953917	.	G	A	225	PASS	DP=27;VDB=0.0895069;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,13;MQ=42	GT:PL	1/1:255,75,0
+LF10_chr6	5313283	.	T	TTA	225	PASS	INDEL;IDV=15;IMF=0.833333;DP=18;VDB=0.119845;SGB=-0.691153;MQSB=0.885629;MQ0F=0;AC=2;AN=2;DP4=0,0,13,5;MQ=41	GT:PL	1/1:255,51,0
+LF10_chr6	7450601	.	T	TA	225	PASS	INDEL;IDV=24;IMF=1;DP=24;VDB=0.220638;SGB=-0.692831;MQSB=0.934987;MQ0F=0;AC=2;AN=2;DP4=0,0,6,18;MQ=40	GT:PL	1/1:255,72,0
+LF10_chr6	12102152	.	TA	T	228	PASS	INDEL;IDV=33;IMF=0.970588;DP=34;VDB=0.0501736;SGB=-0.693127;MQSB=0.772706;MQ0F=0;AC=2;AN=2;DP4=1,0,9,24;MQ=40	GT:PL	1/1:255,87,0
+LF10_chr6	13942365	.	T	TA	225	PASS	INDEL;IDV=40;IMF=1;DP=40;VDB=0.286405;SGB=-0.693145;MQSB=0.96037;MQ0F=0;AC=2;AN=2;DP4=0,0,19,21;MQ=41	GT:PL	1/1:255,120,0
+LF10_chr6	15819062	.	T	TA	225	PASS	INDEL;IDV=27;IMF=0.931035;DP=29;VDB=0.0357008;SGB=-0.693079;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,11;MQ=42	GT:PL	1/1:255,87,0
+LF10_chr6	17550525	.	CT	C	228	PASS	INDEL;IDV=30;IMF=0.909091;DP=33;VDB=0.867635;SGB=-0.69312;MQSB=0.934379;MQ0F=0;AC=2;AN=2;DP4=0,1,13,19;MQ=41	GT:PL	1/1:255,60,0
+LF10_chr6	17551075	.	C	CG	225	PASS	INDEL;IDV=19;IMF=0.95;DP=20;VDB=0.206159;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,8;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr6	17551535	.	T	A	225	PASS	DP=23;VDB=0.615627;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,5;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr6	20212279	.	C	T	225	PASS	DP=20;VDB=0.883911;SGB=-0.690438;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,10;MQ=42	GT:PL	1/1:255,51,0
+LF10_chr6	25001075	.	A	T	225	PASS	DP=32;VDB=0.0339085;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,12;MQ=42	GT:PL	1/1:255,90,0
+LF10_chr6	25580511	.	TC	T	208	PASS	INDEL;IDV=26;IMF=1;DP=26;VDB=0.902164;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,13,12;MQ=42	GT:PL	1/1:235,53,0
+LF10_chr6	27286796	.	T	TAAC	225	PASS	INDEL;IDV=12;IMF=0.8;DP=15;VDB=0.0574695;SGB=-0.688148;MQSB=0.954207;MQ0F=0;AC=2;AN=2;DP4=0,0,5,10;MQ=41	GT:PL	1/1:255,45,0
+LF10_chr6	28209209	.	T	TTA	225	PASS	INDEL;IDV=11;IMF=1;DP=11;VDB=0.00737407;SGB=-0.676189;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,8,3;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr6	33133042	.	G	GT	223	PASS	INDEL;IDV=44;IMF=1;DP=44;VDB=0.524677;SGB=-0.693146;MQSB=0.981133;MQ0F=0;AC=2;AN=2;DP4=0,0,28,16;MQ=41	GT:PL	1/1:253,132,0
+LF10_chr6	34639660	.	AG	A	228	PASS	INDEL;IDV=22;IMF=0.956522;DP=23;VDB=0.992596;SGB=-0.692562;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,7,15;MQ=42	GT:PL	1/1:255,36,0
+LF10_chr6	34640056	.	AT	A	225	PASS	INDEL;IDV=29;IMF=0.935484;DP=31;VDB=0.6899;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,16;MQ=42	GT:PL	1/1:255,93,0
+LF10_chr6	36242270	.	T	TTA	225	PASS	INDEL;IDV=16;IMF=0.941176;DP=17;VDB=0.502001;SGB=-0.690438;MQSB=0.887766;MQ0F=0;AC=2;AN=2;DP4=0,0,7,10;MQ=40	GT:PL	1/1:255,51,0
+LF10_chr6	36339387	.	AT	A	215	PASS	INDEL;IDV=28;IMF=0.965517;DP=29;VDB=0.972039;SGB=-0.693079;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,11;MQ=42	GT:PL	1/1:245,87,0
+LF10_chr6	36339778	.	CA	C	228	PASS	INDEL;IDV=26;IMF=0.928571;DP=28;VDB=0.61259;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,12,15;MQ=42	GT:PL	1/1:255,44,0
+LF10_chr6	36340223	.	CA	C	213	PASS	INDEL;IDV=21;IMF=1;DP=21;VDB=0.0244341;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,11;MQ=42	GT:PL	1/1:243,63,0
+LF10_chr6	36787112	.	T	TA	225	PASS	INDEL;IDV=31;IMF=0.911765;DP=34;VDB=0.703391;SGB=-0.693132;MQSB=0.995249;MQ0F=0;AC=2;AN=2;DP4=0,0,9,25;MQ=40	GT:PL	1/1:255,102,0
+LF10_chr6	39745152	.	A	AT	228	PASS	INDEL;IDV=16;IMF=0.842105;DP=19;VDB=0.461295;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,10,8;MQ=42	GT:PL	1/1:255,44,0
+LF10_chr6	41044452	.	T	TA	221	PASS	INDEL;IDV=34;IMF=0.971429;DP=35;VDB=0.168016;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,2,13,20;MQ=42	GT:PL	1/1:248,67,0
+LF10_chr6	42051773	.	A	AT	216	PASS	INDEL;IDV=32;IMF=0.864865;DP=37;VDB=0.855663;SGB=-0.693136;MQSB=0.976259;MQ0F=0;AC=2;AN=2;DP4=1,1,13,22;MQ=41	GT:PL	1/1:243,61,0
+LF10_chr6	45691898	.	T	TA	228	PASS	INDEL;IDV=18;IMF=0.782609;DP=23;VDB=0.989626;SGB=-0.692562;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,9,13;MQ=42	GT:PL	1/1:255,29,0
+LF10_chr6	46932407	.	T	TA	215	PASS	INDEL;IDV=14;IMF=0.933333;DP=15;VDB=0.00200051;SGB=-0.688148;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,1,14;MQ=42	GT:PL	1/1:245,45,0
+LF10_chr6	51593266	.	T	TA	218	PASS	INDEL;IDV=29;IMF=0.935484;DP=31;VDB=0.00969135;SGB=-0.69311;MQSB=0.928469;MQ0F=0;AC=2;AN=2;DP4=0,0,19,12;MQ=41	GT:PL	1/1:248,93,0
+LF10_chr6	51719519	.	T	TA	228	PASS	INDEL;IDV=14;IMF=0.7;DP=20;VDB=0.607877;SGB=-0.69168;MQSB=0.969852;MQ0F=0;AC=2;AN=2;DP4=0,1,6,13;MQ=41	GT:PL	1/1:255,28,0
+LF10_chr6	52800136	.	T	TA	225	PASS	INDEL;IDV=24;IMF=0.888889;DP=27;VDB=0.163449;SGB=-0.693021;MQSB=0.912952;MQ0F=0;AC=2;AN=2;DP4=0,0,10,17;MQ=41	GT:PL	1/1:255,75,0
+LF10_chr6	55395093	.	A	G	225	PASS	DP=16;VDB=0.592534;SGB=-0.688148;MQSB=0.77274;MQ0F=0;AC=2;AN=2;DP4=0,0,11,4;MQ=40	GT:PL	1/1:255,45,0
+LF10_chr6	56395047	.	A	T	225	PASS	DP=20;VDB=0.162218;SGB=-0.69168;MQSB=0.879351;MQ0F=0;AC=2;AN=2;DP4=0,0,7,12;MQ=41	GT:PL	1/1:255,57,0
+LF10_chr6	56471739	.	C	CAA	228	PASS	INDEL;IDV=26;IMF=0.962963;DP=27;VDB=0.77553;SGB=-0.692976;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,16,10;MQ=42	GT:PL	1/1:255,40,0
+LF10_chr6	60519044	.	C	T	225	PASS	DP=23;VDB=0.696864;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,8,10;MQ=42	GT:PL	1/1:255,54,0
+LF10_chr6	62748125	.	T	TA	228	PASS	INDEL;IDV=31;IMF=0.911765;DP=34;VDB=0.227552;SGB=-0.69312;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,2,13,19;MQ=42	GT:PL	1/1:255,71,0
+LF10_chr6	66326911	.	C	T	225	PASS	DP=23;VDB=0.302961;SGB=-0.688148;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,3;MQ=42	GT:PL	1/1:255,45,0
+LF10_chr6	67209810	.	C	T	225	PASS	DP=31;VDB=0.0421603;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,18;MQ=42	GT:PL	1/1:255,84,0
+LF10_chr7	2065232	.	G	A	225	PASS	DP=34;VDB=0.982033;SGB=-0.69312;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,19,13;MQ=42	GT:PL	1/1:255,96,0
+LF10_chr7	7515546	.	A	AT	203	PASS	INDEL;IDV=22;IMF=0.956522;DP=23;VDB=0.656099;SGB=-0.692562;MQSB=0.970151;MQ0F=0;AC=2;AN=2;DP4=1,0,10,12;MQ=41	GT:PL	1/1:230,44,0
+LF10_chr7	7515892	.	A	C	225	PASS	DP=19;VDB=0.22938;SGB=-0.691153;MQSB=0.984335;MQ0F=0;AC=2;AN=2;DP4=0,0,3,15;MQ=41	GT:PL	1/1:255,54,0
+LF10_chr7	7516586	.	C	CG	228	PASS	INDEL;IDV=41;IMF=0.97619;DP=42;VDB=0.00412097;SGB=-0.693145;MQSB=0.800961;MQ0F=0;AC=2;AN=2;DP4=0,1,25,16;MQ=40	GT:PL	1/1:255,94,0
+LF10_chr7	7516959	.	T	TA	225	PASS	INDEL;IDV=31;IMF=0.96875;DP=32;VDB=0.552154;SGB=-0.69312;MQSB=0.966891;MQ0F=0;AC=2;AN=2;DP4=0,0,5,27;MQ=40	GT:PL	1/1:255,96,0
+LF10_chr7	8156789	.	T	TA	228	PASS	INDEL;IDV=28;IMF=0.903226;DP=31;VDB=0.65126;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,24,6;MQ=42	GT:PL	1/1:255,60,0
+LF10_chr7	8611111	.	A	AT	228	PASS	INDEL;IDV=28;IMF=0.848485;DP=33;VDB=0.874544;SGB=-0.69312;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,18,14;MQ=42	GT:PL	1/1:255,66,0
+LF10_chr7	9437608	.	GA	G	225	PASS	INDEL;IDV=24;IMF=0.96;DP=25;VDB=0.440749;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,16,9;MQ=42	GT:PL	1/1:255,75,0
+LF10_chr7	11892947	.	T	TTA	228	PASS	INDEL;IDV=18;IMF=0.857143;DP=21;VDB=0.861541;SGB=-0.692067;MQSB=0.780412;MQ0F=0;AC=2;AN=2;DP4=0,1,10,10;MQ=41	GT:PL	1/1:255,34,0
+LF10_chr7	27878811	.	GT	G	211	PASS	INDEL;IDV=20;IMF=1;DP=20;VDB=0.0480033;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,8,12;MQ=42	GT:PL	1/1:241,60,0
+LF10_chr7	28671097	.	T	TTGG	225	PASS	INDEL;IDV=8;IMF=0.727273;DP=11;VDB=0.972006;SGB=-0.676189;MQSB=0.964642;MQ0F=0;AC=2;AN=2;DP4=0,0,7,4;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr7	28916555	.	GA	G	225	PASS	INDEL;IDV=23;IMF=1;DP=23;VDB=0.00282259;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,8;MQ=42	GT:PL	1/1:255,69,0
+LF10_chr7	29026165	.	T	TA	228	PASS	INDEL;IDV=22;IMF=0.846154;DP=26;VDB=0.0158835;SGB=-0.692914;MQSB=0.960078;MQ0F=0;AC=2;AN=2;DP4=1,0,10,15;MQ=41	GT:PL	1/1:255,41,0
+LF10_chr7	29832927	.	T	TA	206	PASS	INDEL;IDV=32;IMF=0.888889;DP=36;VDB=0.807161;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,18,16;MQ=42	GT:PL	1/1:233,58,0
+LF10_chr7	32965960	.	A	AAT	225	PASS	INDEL;IDV=27;IMF=0.9;DP=30;VDB=0.15744;SGB=-0.693097;MQSB=0.875409;MQ0F=0;AC=2;AN=2;DP4=0,0,22,8;MQ=41	GT:PL	1/1:255,90,0
+LF10_chr7	33188136	.	TA	T	228	PASS	INDEL;IDV=31;IMF=0.939394;DP=33;VDB=0.197968;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,14,17;MQ=42	GT:PL	1/1:255,33,0
+LF10_chr7	33188461	.	CA	C	228	PASS	INDEL;IDV=25;IMF=0.862069;DP=29;VDB=0.626708;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,2,9,18;MQ=42	GT:PL	1/1:255,27,0
+LF10_chr7	33466250	.	G	A	225	PASS	DP=19;VDB=0.55197;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,11;MQ=42	GT:PL	1/1:255,54,0
+LF10_chr7	33725210	.	T	TTA	225	PASS	INDEL;IDV=14;IMF=0.666667;DP=21;VDB=0.919894;SGB=-0.692352;MQSB=0.927743;MQ0F=0;AC=2;AN=2;DP4=0,0,10,11;MQ=41	GT:PL	1/1:255,63,0
+LF10_chr8	6592014	.	T	A	225	PASS	DP=32;VDB=0.429105;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,21;MQ=42	GT:PL	1/1:255,93,0
+LF10_chr8	8696340	.	A	AAT	228	PASS	INDEL;IDV=18;IMF=0.75;DP=24;VDB=0.978282;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,2,21;MQ=42	GT:PL	1/1:255,40,0
+LF10_chr8	15116648	.	A	AT	225	PASS	INDEL;IDV=27;IMF=0.964286;DP=28;VDB=0.27062;SGB=-0.693054;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,16,12;MQ=42	GT:PL	1/1:255,84,0
+LF10_chr8	15910885	.	G	GA	203	PASS	INDEL;IDV=29;IMF=1;DP=29;VDB=0.371674;SGB=-0.693054;MQSB=0.974027;MQ0F=0;AC=2;AN=2;DP4=0,1,19,9;MQ=41	GT:PL	1/1:230,73,0
+LF10_chr8	17012394	.	C	CA	215	PASS	INDEL;IDV=22;IMF=1;DP=22;VDB=0.435049;SGB=-0.692562;MQSB=0.770381;MQ0F=0;AC=2;AN=2;DP4=0,0,11,11;MQ=40	GT:PL	1/1:245,66,0
+LF10_chr8	18223414	.	T	TAA	228	PASS	INDEL;IDV=23;IMF=0.884615;DP=26;VDB=0.574319;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,11,14;MQ=42	GT:PL	1/1:255,46,0
+LF10_chr8	21498197	.	A	AT	217	PASS	INDEL;IDV=20;IMF=0.952381;DP=21;VDB=0.45609;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,20,1;MQ=41	GT:PL	1/1:247,63,0
+LF10_chr8	29284874	.	T	A	225	PASS	DP=27;VDB=0.0852989;SGB=-0.692717;MQSB=0.907354;MQ0F=0;AC=2;AN=2;DP4=0,0,14,9;MQ=41	GT:PL	1/1:255,69,0
+LF10_chr8	30194162	.	G	GAA	225	PASS	INDEL;IDV=29;IMF=0.966667;DP=30;VDB=0.0539116;SGB=-0.693097;MQSB=0.952765;MQ0F=0;AC=2;AN=2;DP4=0,0,15,15;MQ=41	GT:PL	1/1:255,90,0
+LF10_chr8	30843966	.	A	AT	225	PASS	INDEL;IDV=26;IMF=1;DP=26;VDB=0.318692;SGB=-0.692976;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,22,4;MQ=42	GT:PL	1/1:255,78,0
+LF10_chr8	32864955	.	A	AAT	225	PASS	INDEL;IDV=14;IMF=0.777778;DP=18;VDB=0.291978;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,5;MQ=42	GT:PL	1/1:255,54,0
+LF10_chr8	33629988	.	T	TA	228	PASS	INDEL;IDV=17;IMF=0.85;DP=20;VDB=0.881144;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,7,12;MQ=42	GT:PL	1/1:255,29,0
+LF10_chr8	34768130	.	A	AT	228	PASS	INDEL;IDV=9;IMF=0.75;DP=12;VDB=0.279346;SGB=-0.676189;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,7,4;MQ=42	GT:PL	1/1:255,23,0
+LF10_chr8	36066922	.	A	AT	228	PASS	INDEL;IDV=25;IMF=0.833333;DP=30;VDB=0.108634;SGB=-0.693021;MQSB=0.963674;MQ0F=0;AC=2;AN=2;DP4=1,2,12,15;MQ=41	GT:PL	1/1:255,52,0
+LF10_chr8	36374430	.	A	AT	228	PASS	INDEL;IDV=15;IMF=0.882353;DP=17;VDB=0.615593;SGB=-0.689466;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,7,9;MQ=42	GT:PL	1/1:255,37,0
+LF10_chr8	37179829	.	A	AAAAAC	204	PASS	INDEL;IDV=1;IMF=0.0833333;DP=12;VDB=0.000153235;SGB=-0.676189;MQSB=0.5;MQ0F=0;AC=2;AN=2;DP4=0,1,10,1;MQ=40	GT:PL	1/1:231,23,0
+LF10_chr8	38166321	.	A	AT	225	PASS	INDEL;IDV=12;IMF=0.8;DP=15;VDB=0.522856;SGB=-0.688148;MQSB=0.898397;MQ0F=0;AC=2;AN=2;DP4=0,0,7,8;MQ=40	GT:PL	1/1:255,45,0
+LF10_chr8	38896113	.	T	TA	225	PASS	INDEL;IDV=10;IMF=0.833333;DP=12;VDB=0.987825;SGB=-0.680642;MQSB=0.95494;MQ0F=0;AC=2;AN=2;DP4=0,0,7,5;MQ=42	GT:PL	1/1:255,36,0
+LF10_tig00000142_pilon	30282	.	AC	A	225	PASS	INDEL;IDV=37;IMF=0.948718;DP=39;VDB=0.422014;SGB=-0.693144;MQSB=0.646123;MQ0F=0;AC=2;AN=2;DP4=0,0,22,17;MQ=40	GT:PL	1/1:255,117,0
+LF10_tig00000402_pilon	13428	.	AC	A	225	PASS	INDEL;IDV=32;IMF=1;DP=32;VDB=0.0874022;SGB=-0.69312;MQSB=0.549964;MQ0F=0;AC=2;AN=2;DP4=0,0,13,19;MQ=40	GT:PL	1/1:255,96,0
+LF10_tig00000697_pilon	23253	.	T	G	225	PASS	DP=17;VDB=0.554944;SGB=-0.689466;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,5,11;MQ=42	GT:PL	1/1:255,48,0
+LF10_tig00000729_pilon	79174	.	T	G	211	PASS	DP=65;VDB=0.000497602;SGB=-0.693147;MQ0F=0;AC=2;AN=2;DP4=0,0,0,63;MQ=41	GT:PL	1/1:241,190,0
+LF10_tig00001032_pilon	483	.	T	TA	225	PASS	INDEL;IDV=29;IMF=0.935484;DP=31;VDB=0.983402;SGB=-0.69311;MQSB=0.922074;MQ0F=0;AC=2;AN=2;DP4=0,0,26,5;MQ=40	GT:PL	1/1:255,93,0
+LF10_tig00002364_pilon	6103	.	C	T	228	PASS	DP=22;VDB=0.0136722;SGB=-0.691153;RPB=1;MQB=1;MQSB=0.798516;BQB=1;MQ0F=0;AC=2;AN=2;DP4=0,1,3,15;MQ=40	GT:PL	1/1:255,25,0
+LF10_tig00002457_pilon	13642	.	A	AT	228	PASS	INDEL;IDV=18;IMF=0.947368;DP=19;VDB=0.818985;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,10,8;MQ=42	GT:PL	1/1:255,25,0
+LF10_tig00002457_pilon	13880	.	G	GT	228	PASS	INDEL;IDV=32;IMF=0.864865;DP=37;VDB=0.341757;SGB=-0.693136;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,26,9;MQ=42	GT:PL	1/1:255,43,0
+LF10_tig00002457_pilon	14620	.	T	TG	228	PASS	INDEL;IDV=25;IMF=0.925926;DP=27;VDB=0.737046;SGB=-0.692914;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,1,13,12;MQ=42	GT:PL	1/1:255,37,0
+LF10_tig00002457_pilon	14724	.	T	TG	228	PASS	INDEL;IDV=28;IMF=0.8;DP=35;VDB=0.690436;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=2,0,16,17;MQ=42	GT:PL	1/1:255,43,0
+LF10_tig00002596_pilon	90066	.	A	AC	228	PASS	INDEL;IDV=19;IMF=0.904762;DP=21;VDB=0.887235;SGB=-0.692067;MQSB=0.748434;MQ0F=0;AC=2;AN=2;DP4=0,1,4,16;MQ=41	GT:PL	1/1:255,41,0
+LF10_tig00002628_pilon	53930	.	A	T	225	PASS	DP=32;VDB=0.000350109;SGB=-0.692976;MQSB=0.975611;MQ0F=0;AC=2;AN=2;DP4=0,0,8,18;MQ=41	GT:PL	1/1:255,78,0
+LF10_tig00002680_pilon	32310	.	A	AT	228	PASS	INDEL;IDV=32;IMF=0.969697;DP=33;VDB=0.135752;SGB=-0.69312;MQSB=0.594447;MQ0F=0;AC=2;AN=2;DP4=0,1,14,18;MQ=40	GT:PL	1/1:255,78,0
+LF10_tig00002819_pilon	77893	.	C	T	220	PASS	DP=12;VDB=0.213703;SGB=-0.680642;MQSB=0.6;MQ0F=0;AC=2;AN=2;DP4=0,0,2,10;MQ=41	GT:PL	1/1:250,36,0
+LF10_tig00002829_pilon	52909	.	TA	T	228	PASS	INDEL;IDV=32;IMF=0.969697;DP=33;VDB=0.698577;SGB=-0.693097;MQSB=0.942719;MQ0F=0;AC=2;AN=2;DP4=2,1,16,14;MQ=41	GT:PL	1/1:255,27,0
