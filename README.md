@@ -26,7 +26,7 @@ MiMut was designed for easy identification of *Mimulus* mutants.
 
 1. Install Miniconda3 following the [instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
 2. Download MiMut to your server:
-`git clone git@github.com:qslin/MiMut.git`
+`git clone https://github.com/qslin/MiMut.git`
 3. Create MiMut environment:
 `conda env create -f MiMut/MiMut.yaml`
 4. Activate the environment:
