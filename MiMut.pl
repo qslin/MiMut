@@ -27,6 +27,11 @@ my %length; #record contig length
 my %positions; #record SNP positions on a contig
 my %legalSNPs; #record legal SNP positions on a contig
 my $max = 0; #record the maximum #SNP in a window
+my $abs = abs_path($0);
+$abs =~ s/\/MiMut.pl$//;
+$abs =~ s/ /\\ /g;
+$abs =~ s/\'/\\'/g;
+
 $d = 300 if not defined($d);
 $n = 1 if not defined($n);
 $w = 20000 if not defined($w);
@@ -47,10 +52,9 @@ close IN;
 
 if ($v ne "off") {
 	open IN, "$v" or die "Can't open $v: $!";
-	my $dir = getcwd;
 	foreach my $file (<IN>) {
-		next if $file eq "" or $file =~ /^(\s)*$/ or $file =~ /^$dir\//;
-		open VCF, "$file" or die "Can't open $file: $!";
+		next if $file eq "" or $file =~ /^(\s)*$/;
+		open VCF, "$abs/$file" or die "Can't open $abs/$file: $!";
 		while (<VCF>) {
 			next if $_ =~ /^#/;
 			@_ = split(/\t/,$_);
@@ -106,10 +110,6 @@ if ($m eq "on") {
 	}
 	close OUT;
 
-	my $abs = abs_path($0);
-	$abs =~ s/\/MiMut.pl$//;
-	$abs =~ s/ /\\ /g;
-	$abs =~ s/\'/\\'/g;
 	system("Rscript $abs/MiMut.r $o $max") if $t eq "off";
 }
 
