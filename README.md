@@ -63,14 +63,13 @@ mutant_snps/PIN1/snp3.vcf
 mutant_snps/ROI2/snp3.vcf
 mutant_snps/Wastonia/snp3.vcf
 ```
-We need to remove *bagua* on the third line and create a new library: `grep -v 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt` Then use the new library `MiMut/LF10_lib_no_bagua.txt` for running MiMut. 
-
+We need to remove *bagua* on the third line and create a new library for running MiMut: 
+```grep -v 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt` Then use the new library `MiMut/LF10_lib_no_bagua.txt
+```
 If you want to add a new sample to the library, create a folder for the sample in `MiMut/mutant_snps`, put SNP files inside, and add the paths to the library file. For example, you have analyzed a new mutant named Mv233 by MiMut, saved the results in `~/Mv233/`, and would like to add it to the MvBL mutant library:
 ```
 mkdir ~/MiMut/mutant_snps/Mv233
-
 cp ~/Mv233/tmp/snp3.vcf ~/MiMut/mutant_snps/
-
 echo mutant_snps/Mv233/snp3.vcf >> ~/MiMut/MvBL_lib.txt
 ```
 
