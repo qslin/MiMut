@@ -10,6 +10,8 @@ mutant_snps/LAR2/snp3.vcf
 mutant_snps/Ml14181/snp3.vcf
 mutant_snps/MlYL/snp3.vcf
 mutant_snps/NT2/snp3.vcf
+mutant_snps/petalless1_1st/snp3.vcf
+mutant_snps/petalless1_2nd/snp3.vcf
 mutant_snps/cheekless1/snp3.vcf
 mutant_snps/RNG2/snp3.vcf
 mutant_snps/ROI2/snp3.vcf
