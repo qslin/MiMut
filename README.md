@@ -45,7 +45,7 @@ cd ..
 6. Set up the mutant library.
 Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. 
 To use the libraries, please provide their paths such as `~/MiMut/LF10_lib.txt`
-**==If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.==** For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
+**If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.** For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
 ```
 mutant_snps/Trumpet1/snp3.vcf
 mutant_snps/boo3/snp3.vcf
@@ -93,14 +93,6 @@ Execute MiMut (please replace the paths to where your files were stored):
 > `sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/MiMut/genomes/SL9g_v2.0.fa -t 16`
 
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the manual:
-
-### The mutant library setup 
-
-Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. To use the libraries, please provide their path such as `~/MiMut/LF10_lib.txt`. 
-
-==If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.== 
-
-For example: 
 
 ## Frequently asked questions
 
