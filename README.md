@@ -37,7 +37,7 @@ If you don't have them locally, please download from [Mimubase](http://mimubase.
 mkdir MvBL
 cd MvBL
 wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.fa
-wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.coding.fa
+wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.codingseq.fa
 wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.gtf
 wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.protein.fa
 cd ..
@@ -85,7 +85,7 @@ sh path/to/MiMut/MiMut.sh -r path/to/reference/genome -g path/to/reference/annot
 ```
 For example, you have cloned `MiMut` to your home directory `~` and also created `MvBL` folder in home directory. The command would be: 
 ```
-sh ~/MiMut/MiMut.sh -r ~/MvBL/MvBLg_v2.0.fa -g ~/MvBL/MvBLg_v2.0.gtf -c ~/MvBL/MvBLg_v2.0.coding.fa -p ~/MvBL/MvBLg_v2.0.protein.fa -l ~/MiMut/MvBL_lib.txt -f reads.txt
+sh ~/MiMut/MiMut.sh -r ~/MvBL/MvBLg_v2.0.fa -g ~/MvBL/MvBLg_v2.0.gtf -c ~/MvBL/MvBLg_v2.0.codingseq.fa -p ~/MvBL/MvBLg_v2.0.protein.fa -l ~/MiMut/MvBL_lib.txt -f reads.txt
 ```
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
@@ -99,11 +99,11 @@ sh path/to/MiMut/MiMut.sh -r path/to/reference/genome -g path/to/reference/annot
 ```
 Here we use LF10 and SL9 as examples. Supposing you have cloned `MiMut` and `SL9` to your home directory `~` and also created `LF10` folder in home directory, The command will be:
 ```
-sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa
+sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.codingseq.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa
 ```
 In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. **By default, MiMut requires 8 threads.** Change the number of threads using `-t`. For example:
 ```
-sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa -t 16
+sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.codingseq.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa -t 16
 ```
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
