@@ -112,19 +112,28 @@ echo Finish SNPs filtering
 
 annotate()
 {
+
+tmpref=$RANDOM
+
 mkdir $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data/;print $_')
-mkdir $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref/;print $_')
+mkdir $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref/;print $_' -- -ref=$tmpref)
 
-cp $ref $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/sequences.fa/;print $_')
-cp $gtf $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/genes.gtf/;print $_')
-cp $cds $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/cds.fa/;print $_')
-cp $prot $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/ref\/protein.fa/;print $_')
+cp $ref $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref\/sequences.fa/;print $_' -- -ref=$tmpref)
+cp $gtf $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref\/genes.gtf/;print $_' -- -ref=$tmpref)
+cp $cds $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref\/cds.fa/;print $_' -- -ref=$tmpref)
+cp $prot $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref\/protein.fa/;print $_' -- -ref=$tmpref)
 
-echo "ref.genome : ref" > $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_')
+configpath=$(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/$ref.config/;print $_' -- -ref=$tmpref)
 
-snpEff build -gtf22 -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_') -v ref
+echo "ref.genome : ref" > $configpath
 
-snpEff ref SNP.vcf -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_') > SNP.ann.vcf
+snpEff build -gtf22 -c $configpath -v ref
+
+snpEff ref SNP.vcf -c $configpath > SNP.ann.vcf
+
+rm $configpath
+rm -r $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref/;print $_' -- -ref=$tmpref)
+
 SnpSift filter "ANN[0].IMPACT has 'HIGH'" SNP.ann.vcf > SNP.ann.1.vcf
 SnpSift filter "ANN[0].IMPACT has 'MODERATE'" SNP.ann.vcf > SNP.ann.2.vcf
 
