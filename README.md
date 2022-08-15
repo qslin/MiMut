@@ -45,6 +45,7 @@ cd ..
 6. Set up the mutant library.
 Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. 
 To use the libraries, please provide their paths such as `~/MiMut/LF10_lib.txt`
+
 **If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.** For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
 ```
 mutant_snps/Trumpet1/snp3.vcf
