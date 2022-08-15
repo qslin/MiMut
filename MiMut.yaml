@@ -48,6 +48,7 @@ dependencies:
   - libgfortran4=7.5.0=ha8ba4b0_17
   - libgomp=11.2.0=h1234567_1
   - libnghttp2=1.46.0=hce63b2e_0
+  - libnsl=2.0.0=h7f98852_0
   - libpng=1.6.37=hbc83047_0
   - libssh2=1.10.0=h8f2d780_0
   - libstdcxx-ng=11.2.0=h1234567_1
@@ -61,7 +62,7 @@ dependencies:
   - openssl=1.1.1q=h7f8727e_0
   - pango=1.50.7=h05da053_0
   - pcre=8.45=h295c915_0
-  - perl=5.26.2=h14c3975_0
+  - perl=5.32.1=2_h7f98852_perl5
   - pip=22.1.2=py37h06a4308_0
   - pixman=0.40.0=h7f8727e_1
   - python=3.7.13=h12debd9_0
