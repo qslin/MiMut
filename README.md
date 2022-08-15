@@ -87,7 +87,7 @@ For example, you have cloned `MiMut` to your home directory `~` and also created
 ```
 sh ~/MiMut/MiMut.sh -r ~/MvBL/MvBLg_v2.0.fa -g ~/MvBL/MvBLg_v2.0.gtf -c ~/MvBL/MvBLg_v2.0.coding.fa -p ~/MvBL/MvBLg_v2.0.protein.fa -l ~/MiMut/MvBL_lib.txt -f reads.txt
 ```
-For more options, execute `sh ~/MiMut/MiMut.sh` to read the manual.
+For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
 ### For the secondary workflow
 
@@ -101,11 +101,15 @@ Here we use LF10 and SL9 as examples. Supposing you have cloned `MiMut` and `SL9
 ```
 sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa
 ```
-In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
+In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. **By default, MiMut requires 8 threads.** Change the number of threads using `-t`. For example:
 ```
 sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa -t 16
 ```
-For more options, execute `sh ~/MiMut/MiMut.sh` to read the manual.
+For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
+
+### For UCONN Xanadu users
+
+`sbatch` can be used to submit MiMut jobs. A reference shell script for job submission can be found [here](https://github.com/qslin/MiMut/blob/main/template.sh).
 
 ## Frequently asked questions
 
