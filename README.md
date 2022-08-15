@@ -42,11 +42,9 @@ wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.gtf
 wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.protein.fa
 cd ..
 ```
-6. Set up the mutant library.
-Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. 
-To use the libraries, please provide their paths such as `~/MiMut/LF10_lib.txt`
+6. Set up the mutant library. Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. To use the libraries, please provide their paths such as `~/MiMut/LF10_lib.txt`
 
-**If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut.** For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
+If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut. For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
 ```
 mutant_snps/Trumpet1/snp3.vcf
 mutant_snps/boo3/snp3.vcf
@@ -63,9 +61,12 @@ mutant_snps/PIN1/snp3.vcf
 mutant_snps/ROI2/snp3.vcf
 mutant_snps/Wastonia/snp3.vcf
 ```
-We need to remove *bagua* on the third line and create a new library for running MiMut: 
-```grep -v 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt` Then use the new library `MiMut/LF10_lib_no_bagua.txt
+We need to remove *bagua* on the third line and create a new library for running MiMut:
 ```
+grep -v 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt
+``` 
+Then use the new library `MiMut/LF10_lib_no_bagua.txt` in the MiMut command. 
+
 If you want to add a new sample to the library, create a folder for the sample in `MiMut/mutant_snps`, put SNP files inside, and add the paths to the library file. For example, you have analyzed a new mutant named Mv233 by MiMut, saved the results in `~/Mv233/`, and would like to add it to the MvBL mutant library:
 ```
 mkdir ~/MiMut/mutant_snps/Mv233
