@@ -124,7 +124,7 @@ echo "ref.genome : ref" > $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/sn
 
 snpEff build -gtf22 -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_') -v ref
 
-snpEff ref SNP.vcf > SNP.ann.vcf
+snpEff ref SNP.vcf -c $(which snpEff | perl -ae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/ref.config/;print $_') > SNP.ann.vcf
 SnpSift filter "ANN[0].IMPACT has 'HIGH'" SNP.ann.vcf > SNP.ann.1.vcf
 SnpSift filter "ANN[0].IMPACT has 'MODERATE'" SNP.ann.vcf > SNP.ann.2.vcf
 
