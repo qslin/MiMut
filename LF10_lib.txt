@@ -2,6 +2,7 @@ mutant_snps/boo3/snp3.vcf
 mutant_snps/bagua/snp3.vcf
 mutant_snps/flayed1/snp3.vcf
 mutant_snps/flayed2/snp3.vcf
+mutant_snps/flayed4/snp3.vcf
 mutant_snps/flayed5/snp3.vcf
 mutant_snps/flayed6/snp3.vcf
 mutant_snps/flayed7/snp3.vcf
