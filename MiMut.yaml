@@ -1,8 +1,8 @@
 name: MiMut
 channels:
-  - conda-forge
   - bioconda
   - r
+  - conda-forge
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
