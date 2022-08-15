@@ -91,21 +91,19 @@ For more options, execute `sh ~/MiMut/MiMut.sh` to read the manual.
 
 ### For the secondary workflow
 
-Step 1-8 are the same as the primary workflow. 
-
-> Note: the SL9 genome is available in MiMut package. Make sure to decompress it before using MiMut by `gzip -d ../MiMut/genomes/SL9g_v2.0.fa.gz`
+Step 1-8 are the same as the primary workflow. If you need the SL9 genome, it can be downloaded by `git clone https://github.com/qslin/SL9.git` Make sure to decompress it before using MiMut: `gzip -d SL9/SL9g_v2.0.fa.gz`
 
 9. Execute MiMut (please replace the paths to where your files were stored):
 ```
 sh path/to/MiMut/MiMut.sh -r path/to/reference/genome -g path/to/reference/annotation -c path/to/reference/cds -p path/to/reference/proteins -l path/to/mutant/library -f file/of/raw/read/paths -b path/to/the/second/genome
 ```
-Here we use LF10 and SL9 as examples. Supposing you have cloned `MiMut` to your home directory `~` and also created `LF10` folder in home directory, The command will be:
+Here we use LF10 and SL9 as examples. Supposing you have cloned `MiMut` and `SL9` to your home directory `~` and also created `LF10` folder in home directory, The command will be:
 ```
-sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/MiMut/genomes/SL9g_v2.0.fa
+sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa
 ```
 In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
 ```
-sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/MiMut/genomes/SL9g_v2.0.fa -t 16
+sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.coding.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa -t 16
 ```
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the manual.
 
