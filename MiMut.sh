@@ -137,7 +137,7 @@ annotateb()
 {
 
 awk '$3>0{print $1"\t"$2"\t"$2+20000}' SNP.txt |tail -n +2 > tmp.bed
-bedtools merge -i tmp.bed |awk '$3-$2>80000{print}'|bedtools merge -i - -d 200000 |awk '{print $1"\t"$2"\t"$3}'> high_count_regions.bed
+bedtools merge -i tmp.bed |awk '$3-$2>80000{print}'|bedtools merge -i - -d 200000 |awk '{print $1"\t"$2"\t"$3}'> ../high_count_regions.bed
 rm tmp.bed
 cd ..
 
