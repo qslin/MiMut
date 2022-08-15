@@ -37,9 +37,9 @@ If you don't have them locally, please download from [Mimubase](http://mimubase.
 mkdir MvBL
 cd MvBL
 wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.fa
-http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.coding.fa
-http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.gtf
-http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.protein.fa
+wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.coding.fa
+wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.gtf
+wget http://mimubase.org/FTP/Genomes/MvBLg_v2.0/MvBLg_v2.0.protein.fa
 cd ..
 ```
 6. Set up the mutant library.
