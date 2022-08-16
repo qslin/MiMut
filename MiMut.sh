@@ -99,7 +99,7 @@ echo Finish SNP calling and filtering
 
 filter()
 {
-perl $SCRIPT_DIR/MiMut.pl -f=snp3.vcf -v=$lib -o=SNP -m=on
+perl $SCRIPT_DIR/MiMut.pl -f=snp3.vcf -v=$lib -o=SNP -m=off
 echo Finish SNPs filtering
 }
 
