@@ -127,8 +127,8 @@ All the output files will be stored in the directory where you run or submit MiM
 | snp2.vcf	| contains all heterozygous and homozygous SNPs; can be added to the mutant SNPs library	|
 | snp3.vcf	| derives from snp2.vcf; contains all homozygous SNPs; can be added to the mutant SNPs library	|
 | SNP.ann.vcf    | derives from snp3.vcf; contains all homozygous SNPs after filtering by a mutant library	|
-| SNP.ann.1.vcf  | derives from SNP.ann.vcf; contains SNPs of high impact on the genes    |
-| SNP.ann.2.vcf  | derives from SNP.ann.vcf; contains SNPs of mediate impact on the genes |
+| SNP.ann.1.vcf  | derives from SNP.ann.vcf in the primary workflow or from SNP.ann.high_count_regions.vcf in the secondary workflow; contains SNPs of high impact on the genes    |
+| SNP.ann.2.vcf  | derives from SNP.ann.vcf in the primary workflow or from SNP.ann.high_count_regions.vcf in the secondary workflow; contains SNPs of mediate impact on the genes |
 
 If you use the secondary workflow, two more output files will be generated: 
 
