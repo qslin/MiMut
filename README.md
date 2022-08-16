@@ -10,11 +10,15 @@
 
 ## Introduction of MiMut
 
-MiMut was designed for easy identification of *Mimulus* mutants. 
+MiMut was designed for easy identification of *Mimulus* mutants. It requires minimal bioinformatics skills for researchers to easily run a complicated pipeline for analyzing next-generation sequencing data. More than twenty *Mimulus* mutants have been successfully identified using MiMut. 
+
+If MiMut is helpful for your research, please cite: 
 
 ## The primary workflow of MiMut
 
 ![Figure_1](https://github.com/qslin/MiMut/blob/main/figures/Figure1.png?raw=true)
+
+First, we mutated the wildtype monkeyflower seeds with EMS treatment. These seeds were sown to generate M1 plants, the main proportion of which was supposed to be heterozygous in regard of mutations. Most of the mutations were recessive so that no phenotype was observed in most M1 plants. Secondly, an M2 population was generated for each mutant by selfing the M1 plant. The segregation rate of an M2 population was expected to be 3:1. The M2 plants with the mutant phenotypes were backcrossed to the wildtype to produce an F2 population. The F2 plants with the mutant phenotypes were selected for DNA extraction and pooling. At least 30 individuals were needed for a bulk of DNA, which was further sequenced by NGS, e.g., Illumina sequencing, to produce DNA raw reads. Raw reads were trimmed to get rid of adapters and sequences with bad quality and then aligned to user-designated genomes. Single nucleotide polymorphisms (SNPs) were called based on the read alignments followed by filtration based on the on-site sequencing coverage, read mapping quality, and homozygosity. Since the true causal mutation should not be shared in the other mutants of different phenotypes, SNPs were further filtered by comparing to all homozygous SNPs found to date in the other mutants of the same species. So only SNPs that uniquely appeared in the mutant were retained as candidates of the causal mutation. Among these candidates, SNPs of high or moderate impact on genes were first to check. Other SNPs were reserved for checking in case none of these SNPs was verified as the true causal ones by functional experiments. 
 
 ## The secondary workflow of MiMut (e.g. using SL9 and LF10 inbred lines)
 
@@ -136,10 +140,6 @@ If you use the secondary workflow, two more output files will be generated:
 There will be a `tmp` folder storing all the intermediate data such as the trimmed reads and the alignment files. Since in most cases, these files will not be used anymore, you can delete the folder by `rm -r tmp` after the MiMut job is finished.
 
 ## Frequently asked questions
-
-1. Why there is no SNP in the outputs?
-
-If there no error message, it means no SNP candidate left after filtering. 
 
 
 
