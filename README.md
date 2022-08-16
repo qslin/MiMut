@@ -118,16 +118,16 @@ For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
 All the output files will be stored in the directory where you run or submit MiMut jobs. There will be five basic outputs as described below: 
 
-|snp2.vcf	|contains all heterozygous and homozygous SNPs; can be added to the mutant SNPs library	|
-|snp3.vcf	|derives from snp2.vcf; contains all homozygous SNPs; can be added to the mutant SNPs library|
-|SNP.ann.vcf    |derives from snp3.vcf; contains all homozygous SNPs after filtering by a mutant library|
-|SNP.ann.1.vcf  |derives from SNP.ann.vcf; contains SNPs of high impact on the genes    |
-|SNP.ann.2.vcf  |derives from SNP.ann.vcf; contains SNPs of mediate impact on the genes |
+| snp2.vcf	| contains all heterozygous and homozygous SNPs; can be added to the mutant SNPs library	|
+| snp3.vcf	| derives from snp2.vcf; contains all homozygous SNPs; can be added to the mutant SNPs library	|
+| SNP.ann.vcf    | derives from snp3.vcf; contains all homozygous SNPs after filtering by a mutant library	|
+| SNP.ann.1.vcf  | derives from SNP.ann.vcf; contains SNPs of high impact on the genes    |
+| SNP.ann.2.vcf  | derives from SNP.ann.vcf; contains SNPs of mediate impact on the genes |
 
 If you use the secondary workflow, two more output files will be generated: 
 
-|SNP.ann.high_count_regions.vcf	|derives from SNP.ann.vcf; contains SNPs within regions of high SNP distribution rates	|
-|SNP.eps			|is the figure of homozygous SNP distribution rate on chromosomes; a high peak indicates a candidate region for the causal mutation|
+| SNP.ann.high_count_regions.vcf	| derives from SNP.ann.vcf; contains SNPs within regions of high SNP distribution rates	|
+| SNP.eps			| is the figure of homozygous SNP distribution rate on chromosomes; a high peak indicates a candidate region for the causal mutation	|
 
 There will be a `tmp` folder storing all the intermediate data such as the trimmed reads and the alignment files. Since in most cases, these files will not be used anymore, you can delete the folder by `rm -r tmp` after the MiMut job is finished.
 
