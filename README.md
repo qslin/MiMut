@@ -18,11 +18,27 @@ If MiMut is helpful for your research, please cite:
 
 ![Figure_1](https://github.com/qslin/MiMut/blob/main/figures/Figure1.png?raw=true)
 
-First, we mutated the wildtype monkeyflower seeds with EMS treatment. These seeds were sown to generate M1 plants, the main proportion of which was supposed to be heterozygous in regard of mutations. Most of the mutations were recessive so that no phenotype was observed in most M1 plants. Secondly, an M2 population was generated for each mutant by selfing the M1 plant. The segregation rate of an M2 population was expected to be 3:1. The M2 plants with the mutant phenotypes were backcrossed to the wildtype to produce an F2 population. The F2 plants with the mutant phenotypes were selected for DNA extraction and pooling. At least 30 individuals were needed for a bulk of DNA, which was further sequenced by NGS, e.g., Illumina sequencing, to produce DNA raw reads. Raw reads were trimmed to get rid of adapters and sequences with bad quality and then aligned to user-designated genomes. Single nucleotide polymorphisms (SNPs) were called based on the read alignments followed by filtration based on the on-site sequencing coverage, read mapping quality, and homozygosity. Since the true causal mutation should not be shared in the other mutants of different phenotypes, SNPs were further filtered by comparing to all homozygous SNPs found to date in the other mutants of the same species. So only SNPs that uniquely appeared in the mutant were retained as candidates of the causal mutation. Among these candidates, SNPs of high or moderate impact on genes were first to check. Other SNPs were reserved for checking in case none of these SNPs was verified as the true causal ones by functional experiments. 
+First, we mutated the wildtype monkeyflower seeds with EMS treatment. These seeds were sown to generate M1 plants, the main proportion of which was supposed to be heterozygous in regard of mutations. Most of the mutations were recessive so that no phenotype was observed in most M1 plants. Secondly, an M2 population was generated for each mutant by selfing the M1 plant. The segregation rate of an M2 population was expected to be 3:1. 
+
+The M2 plants with the mutant phenotypes were backcrossed to the wildtype to produce an F2 population. The F2 plants with the mutant phenotypes were selected for DNA extraction and pooling. At least 30 individuals were needed for a bulk of DNA, which was further sequenced by NGS, e.g., Illumina sequencing, to produce DNA raw reads. 
+
+Raw reads were trimmed to get rid of adapters and sequences with bad quality and then aligned to user-designated genomes. Single nucleotide polymorphisms (SNPs) were called based on the read alignments followed by filtration based on the on-site sequencing coverage, read mapping quality, and homozygosity. 
+
+Since the true causal mutation should not be shared in the other mutants of different phenotypes, SNPs were further filtered by comparing to all homozygous SNPs found to date in the other mutants of the same species. So only SNPs that uniquely appeared in the mutant were retained as candidates of the causal mutation. Among these candidates, SNPs of high or moderate impact on genes were first to check. Other SNPs were reserved for checking in case none of these SNPs was verified as the true causal ones by functional experiments. 
 
 ## The secondary workflow of MiMut (e.g. using SL9 and LF10 inbred lines)
 
 ![Figure_2](https://github.com/qslin/MiMut/blob/main/figures/Figure2.png?raw=true)
+
+First, we mutated the wildtype monkeyflower (e.g. LF10) seeds with EMS treatment. These seeds were sown to generate M1 plants, the main proportion of which was supposed to be heterozygous in regard of mutations. Most of the mutations were recessive so that no phenotype was observed in most M1 plants. Secondly, an M2 population was generated for each mutant by selfing the M1 plant. The segregation rate of an M2 population was expected to be 3:1. 
+
+The M2 plants with mutant phenotypes were crossed to another inbred line of the same species (e.g. SL9) to produce F2 segregants with the mutant phenotypes for the collection of DNA pools. At least 30 individuals were needed for a bulk of DNA, which was further sequenced by NGS, e.g., Illumina sequencing, to produce DNA raw reads. 
+
+Raw reads were trimmed to get rid of adapters and sequences with bad quality and then aligned to user-designated genomes of the two inbred lines (e.g. LF10 and SL9). Single nucleotide polymorphisms (SNPs) were called based on the read alignments followed by filtration based on the on-site sequencing coverage, read mapping quality, and homozygosity. 
+
+A figure of homozygous SNP distribution rate across the genome would be produced to visualize the tightly linked flanking region of the causal mutation. Given a high recombination rate, there could be a peak region with significantly high counts of homozygous SNPs. Once the peak region was defined, SNPs out of the region would not be considered as candidates. 
+
+Since the true causal mutation should not be shared in the other mutants of different phenotypes, SNPs were further filtered by comparing to all homozygous SNPs found to date in the other mutants of the same species. So only SNPs that uniquely appeared in the mutant were retained as candidates of the causal mutation. Among these candidates, SNPs of high or moderate impact on genes were first to check. Other SNPs were reserved for checking in case none of these SNPs was verified as the true causal ones by functional experiments.
 
 ## User guide step by step
 
