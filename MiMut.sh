@@ -94,6 +94,9 @@ echo Filter SNPs by homozygousity and mapping quality
 snpcount3=`grep -c -v '^#' snp3.vcf`
 echo Round 3: $snpcount3 SNPs
 
+cp snp2.vcf ../
+cp snp3.vcf ../
+
 echo Finish SNP calling and filtering
 }
 
