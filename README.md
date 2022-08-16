@@ -31,6 +31,9 @@ MiMut was designed for easy identification of *Mimulus* mutants.
 `conda env create -f MiMut/MiMut.yaml`
 4. Activate the environment:
 `conda activate MiMut`
+
+Please make sure to activate MiMut environment everytime you use it. 
+
 5. Prepare genome(s) and annotation files (including CDS sequences, protein sequences, and a GTF file). 
 If you don't have them locally, please download from [Mimubase](http://mimubase.org/FTP/Genomes/). Creating a new folder for each species is recommended. For example: 
 ```
@@ -107,9 +110,26 @@ sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/L
 ```
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
-### For UCONN Xanadu users
+### For UCONN Xanadu users / any HPC with slurm scheduler
 
 `sbatch` can be used to submit MiMut jobs. A reference shell script for job submission can be found [here](https://github.com/qslin/MiMut/blob/main/template.sh).
+
+### To understand the output files
+
+All the output files will be stored in the directory where you run or submit MiMut jobs. There will be five basic outputs as described below: 
+
+|snp2.vcf	|contains all heterozygous and homozygous SNPs; can be added to the mutant SNPs library	|
+|snp3.vcf	|derives from snp2.vcf; contains all homozygous SNPs; can be added to the mutant SNPs library|
+|SNP.ann.vcf    |derives from snp3.vcf; contains all homozygous SNPs after filtering by a mutant library|
+|SNP.ann.1.vcf  |derives from SNP.ann.vcf; contains SNPs of high impact on the genes    |
+|SNP.ann.2.vcf  |derives from SNP.ann.vcf; contains SNPs of mediate impact on the genes |
+
+If you use the secondary workflow, two more output files will be generated: 
+
+|SNP.ann.high_count_regions.vcf	|derives from SNP.ann.vcf; contains SNPs within regions of high SNP distribution rates	|
+|SNP.eps			|is the figure of homozygous SNP distribution rate on chromosomes; a high peak indicates a candidate region for the causal mutation|
+
+There will be a `tmp` folder storing all the intermediate data such as the trimmed reads and the alignment files. Since in most cases, these files will not be used anymore, you can delete the folder by `rm -r tmp` after the MiMut job is finished.
 
 ## Frequently asked questions
 
