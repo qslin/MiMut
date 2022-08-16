@@ -125,11 +125,11 @@ cp $prot $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data
 
 configpath=$(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/$ref.config/;print $_' -- -ref=$tmpref)
 
-echo "ref.genome : ref" > $configpath
+echo $tmpref.genome : $tmpref > $configpath
 
-snpEff build -gtf22 -c $configpath -v ref
+snpEff build -gtf22 -c $configpath -v $tmpref
 
-snpEff ref SNP.vcf -c $configpath > SNP.ann.vcf
+snpEff $tmpref SNP.vcf -c $configpath > SNP.ann.vcf
 
 rm $configpath
 rm -r $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$ref/;print $_' -- -ref=$tmpref)
