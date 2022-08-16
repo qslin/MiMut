@@ -137,7 +137,7 @@ rm -r $(which snpEff | perl -sae '$_=~s/bin\/snpEff/share\/snpeff-5.1-2\/data\/$
 SnpSift filter "ANN[0].IMPACT has 'HIGH'" SNP.ann.vcf > SNP.ann.1.vcf
 SnpSift filter "ANN[0].IMPACT has 'MODERATE'" SNP.ann.vcf > SNP.ann.2.vcf
 
-cp SNP.ann.*.vcf ../
+cp SNP.ann*vcf ../
 
 echo Finish annotation
 }
@@ -154,7 +154,7 @@ cat SNP.ann.vcf | SnpSift intervals high_count_regions.bed > SNP.ann.high_count_
 SnpSift filter "ANN[0].IMPACT has 'HIGH'" SNP.ann.high_count_regions.vcf > SNP.ann.1.vcf
 SnpSift filter "ANN[0].IMPACT has 'MODERATE'" SNP.ann.high_count_regions.vcf > SNP.ann.2.vcf
 
-cp SNP.ann.*.vcf ../
+cp SNP.ann*vcf ../
 
 echo Finish annotation
 }
