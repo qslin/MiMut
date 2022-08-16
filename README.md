@@ -118,6 +118,8 @@ For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
 All the output files will be stored in the directory where you run or submit MiMut jobs. There will be five basic outputs as described below: 
 
+| Files	| Descriptions	|
+| ----- | ----- |
 | snp2.vcf	| contains all heterozygous and homozygous SNPs; can be added to the mutant SNPs library	|
 | snp3.vcf	| derives from snp2.vcf; contains all homozygous SNPs; can be added to the mutant SNPs library	|
 | SNP.ann.vcf    | derives from snp3.vcf; contains all homozygous SNPs after filtering by a mutant library	|
@@ -126,6 +128,8 @@ All the output files will be stored in the directory where you run or submit MiM
 
 If you use the secondary workflow, two more output files will be generated: 
 
+| Files | Descriptions  |
+| ----- | ----- |
 | SNP.ann.high_count_regions.vcf	| derives from SNP.ann.vcf; contains SNPs within regions of high SNP distribution rates	|
 | SNP.eps			| is the figure of homozygous SNP distribution rate on chromosomes; a high peak indicates a candidate region for the causal mutation	|
 
