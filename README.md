@@ -10,7 +10,7 @@
 
 ## Introduction of MiMut
 
-MiMut was designed for easy identification of *Mimulus* mutants. It requires minimal bioinformatics skills for researchers to easily run a complicated pipeline for analyzing next-generation sequencing data. More than twenty *Mimulus* mutants have been successfully identified using MiMut. 
+MiMut was designed for easy identification of *Mimulus* mutants. It requires minimal bioinformatics skills for researchers to easily run a complicated pipeline for analyzing next-generation sequencing data. More than twenty *Mimulus* mutants have been successfully identified using MiMut. It can be applied to any other organisms as well.
 
 If MiMut is helpful for your research, please cite: 
 
@@ -116,7 +116,7 @@ cp ~/Mg002/snp3.vcf ~/MiMut/mutant_snps/Mg002
 echo mutant_snps/Mg001/snp3.vcf >> ~/MiMut/guttatus_lib.txt
 echo mutant_snps/Mg002/snp3.vcf >> ~/MiMut/guttatus_lib.txt
 ```
-Please note that for the first run of new species, an empty library file is required as a MiMut parameter. 
+Note: for the first run of new species, please follow the instructions [here](https://github.com/qslin/MiMut#for-the-first-run-of-new-species).
 
 7. Create a folder for your project: `mkdir project_name` Enter the folder: `cd project_name`
 8. Create a file (e.g. reads.txt) to store the absolute paths of raw reads. One pair per line. Forward and reverse seperated by a space. For example:
@@ -154,6 +154,15 @@ For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 ### For UCONN Xanadu users / any HPC with slurm scheduler
 
 `sbatch` can be used to submit MiMut jobs. A reference shell script for job submission can be found [here](https://github.com/qslin/MiMut/blob/main/template.sh).
+
+### For the first run of new species
+
+Although there is no existing mutant libray for the new species, MiMut has a mandatory requirement of the library file as an input parameter. Therefore, create an empty libray for MiMut to run at the first time: `touch ~/MiMut/new_lib.txt`. Then add the SNP files to the new library following the instructions in step 6 above. You don't need to rerun the whole MiMut pipeline with the new library. Just add `-s filter` to the command so that MiMut will rerun from the filtering step. For example:
+```
+cd ~/Mg001/
+sh ~/MiMut/MiMut.sh -r ~/guttatus/guttatus.fa -g ~/guttatus/guttatus.gtf -c ~/guttatus/guttatus.cds.fa -p ~/guttatus/guttatus.prot.fa -l ~/MiMut/guttatus_lib.txt -f reads.txt -s filter
+```
+Please note that you should execute the MiMut command in the same folder where you execute the first run. Otherwise MiMut cannot find the intermediate files from last steps to continue the filtering.
 
 ### To understand the output files
 
