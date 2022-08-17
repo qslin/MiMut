@@ -44,7 +44,16 @@ Since the true causal mutation should not be shared in the other mutants of diff
 
 ### For the primary workflow
 
-1. Install Miniconda3 following the [instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+1. Install [Miniconda3](https://docs.conda.io/en/latest/miniconda.html). 
+
+First, download the installer: `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+
+Second, install by execute: `sh Miniconda3-latest-Linux-x86_64.sh`. (use its default path settings and let it auto initiate)
+
+Third, execute `source ~/.bashrc`
+
+Finally, execute `conda env list` to print existing environments. If this command work properly, Miniconda3 is successfully installed. 
+
 2. Download MiMut to your server:
 `git clone https://github.com/qslin/MiMut.git`
 3. Create MiMut environment:
