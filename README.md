@@ -76,7 +76,7 @@ cd ..
 ```
 6. Set up the mutant library. Currently there are two mutant libraries curated in MiMut: `LF10_lib.txt` and `MvBL_lib.txt`. These are the latest collection of homozygous SNPs detected from mutants of *Mimulus lewisii* inbred line LF10 and *Mimulus verbenaceus* inbred line MvBL respectively. To use the libraries, please provide their paths such as `~/MiMut/LF10_lib.txt`
 
-If you are re-analyzing an old sample, please make sure to remove the sample from the library before running MiMut. For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
+**If you are re-analyzing an old sample**, please make sure to remove the sample from the library before running MiMut. For example: you are going to re-analyze an old sample called *bagua*. First, check if *bagua* is in the library: `cat MiMut/LF10_lib.txt`. All mutants in the library will be printed: 
 ```
 mutant_snps/Trumpet1/snp3.vcf
 mutant_snps/boo3/snp3.vcf
@@ -99,12 +99,24 @@ grep -v 'bagua' MiMut/LF10_lib.txt > MiMut/LF10_lib_no_bagua.txt
 ``` 
 Then use the new library `MiMut/LF10_lib_no_bagua.txt` in the MiMut command. 
 
-If you want to add a new sample to the library, create a folder for the sample in `MiMut/mutant_snps`, put SNP files inside, and add the paths to the library file. For example, you have analyzed a new mutant named Mv233 by MiMut, saved the results in `~/Mv233/`, and would like to add it to the MvBL mutant library:
+**If you want to add a new sample to the library of existing species**, create a folder for the sample in `MiMut/mutant_snps`, put SNP files inside, and add the paths to the library file. For example, you have analyzed a new mutant named Mv233 by MiMut, saved the results in `~/Mv233/`, and would like to add it to the MvBL mutant library:
 ```
 mkdir ~/MiMut/mutant_snps/Mv233
-cp ~/Mv233/tmp/snp3.vcf ~/MiMut/mutant_snps/
+cp ~/Mv233/snp3.vcf ~/MiMut/mutant_snps/Mv233/
 echo mutant_snps/Mv233/snp3.vcf >> ~/MiMut/MvBL_lib.txt
 ```
+**If you want to create a library for a new species**, create a folder for each sample of the new species in `MiMut/mutant_snps`, put SNP files inside respectively, and create a new file in MiMut folder as a new library, which contains paths of SNP files. For example, you have analyzed two *M. guttatus* mutants called Mg001 and Mg002 by MiMut, saved the results to `~/Mg001/` and `~/Mg002/`, and would like to add it to a guttatus mutant library: 
+```
+mkdir ~/MiMut/mutant_snps/Mg001
+mkdir ~/MiMut/mutant_snps/Mg002
+
+cp ~/Mg001/snp3.vcf ~/MiMut/mutant_snps/Mg001
+cp ~/Mg002/snp3.vcf ~/MiMut/mutant_snps/Mg002
+
+echo mutant_snps/Mg001/snp3.vcf >> ~/MiMut/guttatus_lib.txt
+echo mutant_snps/Mg002/snp3.vcf >> ~/MiMut/guttatus_lib.txt
+```
+Please note that for the first run of new species, an empty library file is required as a MiMut parameter. 
 
 7. Create a folder for your project: `mkdir project_name` Enter the folder: `cd project_name`
 8. Create a file (e.g. reads.txt) to store the absolute paths of raw reads. One pair per line. Forward and reverse seperated by a space. For example:
