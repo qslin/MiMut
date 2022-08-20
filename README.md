@@ -131,6 +131,12 @@ For example, you have cloned `MiMut` to your home directory `~` and also created
 ```
 sh ~/MiMut/MiMut.sh -r ~/MvBL/MvBLg_v2.0.fa -g ~/MvBL/MvBLg_v2.0.gtf -c ~/MvBL/MvBLg_v2.0.codingseq.fa -p ~/MvBL/MvBLg_v2.0.protein.fa -l ~/MiMut/MvBL_lib.txt -f reads.txt
 ```
+By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
+```
+sh ~/MiMut/MiMut.sh -r ~/MvBL/MvBLg_v2.0.fa -g ~/MvBL/MvBLg_v2.0.gtf -c ~/MvBL/MvBLg_v2.0.codingseq.fa -p ~/MvBL/MvBLg_v2.0.protein.fa -l ~/MiMut/MvBL_lib.txt -f reads.txt -t 16
+```
+For the MvBL genome of about 440Mb, MiMut usually finish a job within one day when using 8 threads. But the run time could be longer given a bigger raw data size. So try to increase threads when you have a sequencing depth of more than 50X. For memory usage, 8GB is enough for a *Mimulus* species. Increase memory usage if you have a bigger genome. 
+
 For more options, execute `sh ~/MiMut/MiMut.sh` to read the full manual.
 
 ### For the secondary workflow
@@ -145,7 +151,7 @@ Here we use LF10 and SL9 as examples. Supposing you have cloned `MiMut` and `SL9
 ```
 sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.codingseq.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa
 ```
-In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. **By default, MiMut requires 8 threads.** Change the number of threads using `-t`. For example:
+In this workflow, reads will be mapped to both LF10 and SL9 genomes, which doubles the time of running programs. So increasing threads is recommended when possible. By default, MiMut requires 8 threads. Change the number of threads using `-t`. For example:
 ```
 sh ~/MiMut/MiMut.sh -r ~/LF10/LF10g_v2.0.fa -g ~/LF10/LF10g_v2.0.gtf -c ~/LF10/LF10g_v2.0.codingseq.fa -p ~/LF10/LF10g_v2.0.protein.fa -l ~/MiMut/LF10_lib.txt -f reads.txt -b ~/SL9/SL9g_v2.0.fa -t 16
 ```
