@@ -193,6 +193,10 @@ There will be a `tmp` folder storing all the intermediate data such as the trimm
 
 ## Frequently asked questions
 
+1. How to cite this work?
+   
+   Please cite this work with [![DOI](https://zenodo.org/badge/524241052.svg)](https://zenodo.org/doi/10.5281/zenodo.11624235).
+
 
 
 
